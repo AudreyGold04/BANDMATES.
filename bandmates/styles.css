@@ -131,3 +131,17 @@ section {
     border-radius: 5px;
     cursor: pointer;
   }
+
+  .logo {
+    width: 30%;
+  }
+
+  .chanteuse
+  {
+    width: 30%;
+  }
+
+  .bouche
+  {
+    width: 30%;
+  }
