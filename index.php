@@ -29,13 +29,14 @@ c<!DOCTYPE html>
           </div>
         </div>
         <div class="image-container">
-          <img src="images/image-acceuil.png" alt="Musiciens">
+        <img src="<?php echo wp_get_attachment_image_url(7) ?>" alt="Description image 1" class="img-fluid rounded me-2" style="width: 1366px">
+   
         </div>
       </section>
     
       <section class="white-section" data-bg-color="#E5E5E5">
         <h2>Trouvez des musiciens compatibles avec vous.</h2>
-        <img class="musiciens-compatibles"  src="images/musiciens.png" alt="Groupe de musiciens">
+        <img class="musiciens-compatibles"  src="<?php echo get_template_directory_uri (); ?> images/musiciens.png" alt="Groupe de musiciens">
       </section>
     
       <section class="black-section" data-bg-color="black">
@@ -71,6 +72,7 @@ c<!DOCTYPE html>
         <button class="btn join">Rejoignez gratuitement</button>
         <img class="bouche" src="images/bouche.png"
       </section>
+      <img src="<?php echo site_url(); ?>/wp-content/themes/votre-theme/images/logo.png" alt="Logo">
   <script src="script.js"></script>
 </body>
 </html>

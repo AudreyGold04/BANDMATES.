@@ -1,3 +1,97 @@
 /**
 Theme Name: BandMates Theme
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #FF69B4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 150px 20px 50px;
+    background-color: #000;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #FF69B4;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.join, .login {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #FF69B4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #E5E5E5;
+    color: #000;
+}
+
+.card {
+    background-color: #111;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #FF69B4;
+}
+
+.cta {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #000;
+}
+
+.cta h2 {
+    color: #FF69B4;
+}
