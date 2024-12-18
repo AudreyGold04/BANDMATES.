@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 c<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -71,6 +72,7 @@ c<!DOCTYPE html>
         <p>Faites le premier pas aujourd’hui et transformez votre rêve en réalité.</p>
         <button class="btn join">Rejoignez gratuitement</button>
         <img class="bouche" src="images/bouche.png"
+        <img class="bouche" src="images/bouche.png">
       </section>
       <img src="<?php echo site_url(); ?>/wp-content/themes/votre-theme/images/logo.png" alt="Logo">
   <script src="script.js"></script>
