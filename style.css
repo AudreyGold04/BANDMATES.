@@ -2,9 +2,20 @@
 Theme Name: BandMates Theme
 */
 
+@font-face {
+    font-family: "Zing";
+    src: url("wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "Zing", sans-serif !important;
+}
+
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: "Zing", sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -18,10 +29,10 @@ section {
     padding: 20px;
     box-sizing: border-box;
     transition: background-color 1s ease; 
-  }
+}
   
 
-  .header {
+.header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,125 +43,94 @@ section {
     padding: 10px 20px;
     background-color: black;
     color: #E5E5E5;
-  }
+}
   
-  .nav .btn {
-    margin-left: 10px;
-    padding: 10px 15px;
-    background-color: #EE53CC;
-    color: #E5E5E5;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  
-  .hero {
-    background-color: black;
-    color: #E5E5E5;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero .buttons .btn {
-    margin-right: 15px;
-    padding: 10px 20px;
-    background-color: #FF69B4;
-    color: #E5E5E5;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .hero .image-container img {
-    max-width: 80%;
-    height: auto;
-  }
-  
+.nav {
+    margin: 10px;
+    padding: 20px;
+}
  
-  .white-section {
+.white-section {
     background-color: #E5E5E5;
     color: black;
-  }
+}
   
-  .white-section h2 {
+.white-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-  }
-  
+}
 
-  .black-section {
+
+.black-section {
     background-color: black;
     color: #E5E5E5;
-  }
+}
   
-  .black-section h2 {
+.black-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-  }
+}
   
   
-  .features {
+.features {
     background-color: #E5E5E5;
     color: black;
-  }
+}
   
-  .features .feature-cards {
+.features .feature-cards {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-  }
+}
   
-  .features .card {
+.card {
     width: 30%;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    color: #EE53CC;
     transition: transform 0.3s ease;
     background: #000000;
-  }
+}
   
-  .features .card:hover {
+.card:hover {
     transform: scale(1.05);
-  }
-  
-  
-  .cta {
-    background-color: black;
-    color: #E5E5E5;
-  }
-  
-  .cta .btn {
-    padding: 10px 20px;
-    background-color: #FF69B4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .logo {
-    width: 30%;
-  }
-
-.chanteuse
-{
-width: 10%;
 }
 
-  .bouche
-  {
+.logo {
     width: 30%;
-  }
+}
 
-  .musiciens-compatibles
-  {
+.chanteuse {
+    width: 10%;
+}
+
+.bouche{
+    width: 30%;
+}
+
+.musiciens-compatibles {
     position: relative;
     right: 90px;
+}
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    border: solid #EE53CC 2px;
+    color: #000000;
+    font-size: 20px;
+    background: #EE53CC;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #EE53CC;
+    background: #000000;
+    border: solid #EE53CC 2px;
   }
