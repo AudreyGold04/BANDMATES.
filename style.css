@@ -63,13 +63,13 @@ section {
   }
   
 .right-content {
-    position: relative;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 }
 
-.home {
+.band {
     max-width: 90%;
     border-radius: 20%;
 }

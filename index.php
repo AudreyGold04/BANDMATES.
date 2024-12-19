@@ -30,7 +30,7 @@
             </div>
             
             <div class="right-content">
-                <img class="home" src="/wordpress/wp-content/themes/BANDMATES./images/home.png">
+                <img class="band" src="/wordpress/wp-content/themes/BANDMATES./images/home.png">
                 <img class="star star-1" src="/wordpress/wp-content/themes/BANDMATES./images/etoiles.png">
                 <img class="star star-2" src="/wordpress/wp-content/themes/BANDMATES./images/etoiles.png">
             </div>
