@@ -30,7 +30,6 @@ section {
     box-sizing: border-box;
     transition: background-color 1s ease; 
 }
-  
 
 .header {
     position: fixed;
@@ -49,7 +48,47 @@ section {
     margin: 10px;
     padding: 20px;
 }
- 
+
+.first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+.right-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    max-width: 90%;
+    border-radius: 20%;
+}
+
+.star {
+    position: absolute;
+    width: 50%;
+}
+
+.star-1 {
+    top: -25%;
+    left: 1%;
+}
+
+.star-2 {
+    top: 68%;
+    right: 0%;
+}
+
 .white-section {
     background-color: #E5E5E5;
     color: black;
@@ -133,4 +172,4 @@ section {
     color: #EE53CC;
     background: #000000;
     border: solid #EE53CC 2px;
-  }
+}

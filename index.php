@@ -18,23 +18,30 @@
                 <button class="btn">Support</button>
             </div>
         </header>
-      
-        <section class="black-section">
-            <div class="">
+        
+        <section class="black-section first">
+            
+            <div class="left-content">
                 <h1>La musique vous réunit, BandMates vous connecte</h1>
                 <div class="">
                     <a href="formulaire-inscription.html" class="btn">Rejoindre</a>
-                
                     <button class="btn">Se connecter</button>
                 </div>
             </div>
-      </section>
-    
+            
+            <div class="right-content">
+                <img class="home" src="/wordpress/wp-content/themes/BANDMATES./images/home.png">
+                <img class="star star-1" src="/wordpress/wp-content/themes/BANDMATES./images/etoiles.png">
+                <img class="star star-2" src="/wordpress/wp-content/themes/BANDMATES./images/etoiles.png">
+            </div>
+            
+        </section>
+        
         <section class="white-section">
             <h2>Trouvez des musiciens compatibles avec vous.</h2>
             <img class="musiciens-compatibles"  src="/wordpress/wp-content/themes/BANDMATES./images/musiciens.png" alt="Groupe de musiciens">
         </section>
-    
+        
         <section class="black-section">
             <h2>Formez votre groupe parfait</h2>
             <p>
