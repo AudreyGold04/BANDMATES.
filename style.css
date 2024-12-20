@@ -4,7 +4,7 @@ Theme Name: BandMates Theme
 
 @font-face {
     font-family: 'Zing';
-    src: url("/assets/fonts/zing.otf") format('opentype');
+    src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +15,6 @@ Theme Name: BandMates Theme
 
 body {
     margin: 0;
-    font-family: "Zing", sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -43,7 +42,12 @@ section {
     background-color: black;
     color: #E5E5E5;
 }
-  
+
+h1 {
+    font-size: 4rem;
+    color: #EE53CC;
+}
+
 .nav {
     margin: 10px;
     padding: 20px;
@@ -70,23 +74,23 @@ section {
 }
 
 .band {
-    max-width: 100%;
-    border-radius: 20%;
+    max-width: 75%;
+    border-radius: 15%;
 }
 
 .star {
     position: absolute;
-    width: 50%;
+    width: 90%;
 }
 
 .star-1 {
-    top: -25%;
-    left: 1%;
+    top: -38%;
+    left: -29%;
 }
 
 .star-2 {
-    top: 68%;
-    right: 0%;
+    top: 60%;
+    right: -25%;
 }
 
 .white-section {
@@ -132,7 +136,7 @@ section {
     height: 450px; 
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 36px;
     color: #EE53CC;
     transition: transform 0.3s ease;
     background: #000000;
@@ -156,6 +160,7 @@ section {
     height: auto; 
     margin: 20px auto 0; 
     display: block;
+    border-radius: 24px;
 }
 
 .bouche{
@@ -168,15 +173,20 @@ section {
     object-fit: cover; 
 }
 
+.txt {
+    margin-bottom: 100px;
+}
+
 .btn {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
-    border-radius: 28px;
+    border-radius: 35px;
     border: solid #EE53CC 2px;
     color: #000000;
-    font-size: 20px;
+    font-size: 25px;
     background: #EE53CC;
-    padding: 10px 20px 10px 20px;
+    padding: 15px 25px 15px 25px;
+    margin: 50px;
     text-decoration: none;
 }
 
