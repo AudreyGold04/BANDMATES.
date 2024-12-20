@@ -24,7 +24,7 @@
             <div class="left-content">
                 <h1>La musique vous réunit, BandMates vous connecte</h1>
                 <div class="">
-                    <a href="formulaire-inscription.html" class="btn">Rejoindre</a>
+                    <a href="/wordpress/wp-content/themes/BANDMATES./bandmates/formulaire-inscription.html" class="btn">Rejoindre</a>
                     <button class="btn">Se connecter</button>
                 </div>
             </div>
@@ -38,7 +38,6 @@
         </section>
         
         <section class="white-section">
-            <h2>Trouvez des musiciens compatibles avec vous.</h2>
             <img class="musiciens-compatibles"  src="/wordpress/wp-content/themes/BANDMATES./images/musiciens.png" alt="Groupe de musiciens">
         </section>
         

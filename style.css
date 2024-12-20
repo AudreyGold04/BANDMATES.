@@ -3,14 +3,14 @@ Theme Name: BandMates Theme
 */
 
 @font-face {
-    font-family: "Zing";
-    src: url("wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
+    font-family: 'Zing';
+    src: url("/assets/fonts/zing.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 * {
-    font-family: "Zing", sans-serif !important;
+    font-family: 'Zing', sans-serif !important;
 }
 
 body {
@@ -70,7 +70,7 @@ section {
 }
 
 .band {
-    max-width: 90%;
+    max-width: 100%;
     border-radius: 20%;
 }
 
@@ -133,6 +133,7 @@ section {
     color: #EE53CC;
     transition: transform 0.3s ease;
     background: #000000;
+    
 }
   
 .card:hover {
@@ -152,8 +153,9 @@ section {
 }
 
 .musiciens-compatibles {
-    position: relative;
-    right: 90px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 
 .btn {
