@@ -32,11 +32,19 @@
         </section>
         
         <section class="black-section">
-            <h2>Formez votre groupe parfait</h2>
-            <p>
+
+            <div class="left-content">
+                <h1>Formez votre groupe<br>parfait</h2>
+                <h2>
                 Trouvez des musiciens qui vibrent comme vous. Formez votre groupe, partagez votre passion et jouez ensemble.
-            </p>
-            <img class="chanteuse" src="/wordpress/wp-content/themes/BANDMATES./images/chanteuse.png" alt="Chanteuse">
+                </h2>
+            </div>
+            
+            <div class="right-content">
+                <img class="chanteuse" src="/wordpress/wp-content/themes/BANDMATES./images/chanteuse.jpg" alt="Chanteuse">
+                <img class="scotch scotch-1" src="/wordpress/wp-content/themes/BANDMATES./images/scotch_blanc.png" alt="Chanteuse">
+                <img class="scotch scotch-2" src="/wordpress/wp-content/themes/BANDMATES./images/scotch_transparant.png" alt="Chanteuse">
+            </div>
         </section>
     
         <section class="features">

@@ -45,7 +45,16 @@ section {
 
 h1 {
     font-size: 4rem;
+    text-align: start;
     color: #EE53CC;
+    padding-left: 7%;
+    margin-left: 10%;
+}
+
+h2 {
+    text-align: start;
+    padding-left: 7%;
+    margin-left: 10%;
 }
 
 .nav {
@@ -91,6 +100,21 @@ h1 {
 .star-2 {
     top: 60%;
     right: -25%;
+}
+
+.scotch {
+    position: absolute;
+    width: 40%;
+}
+
+.scotch-1 {
+    top: -10%;
+    left: 15%;
+}
+
+.scotch-2 {
+    top: 80%;
+    right: -6%;
 }
 
 .white-section {
@@ -156,11 +180,9 @@ h1 {
 }
 
 .chanteuse {
-    width: 30%; 
-    height: auto; 
-    margin: 20px auto 0; 
-    display: block;
-    border-radius: 24px;
+    max-width: 65%;
+    border-radius: 15%;
+    margin-left: 20%;
 }
 
 .bouche{
