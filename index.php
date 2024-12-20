@@ -8,7 +8,8 @@
         <title>BandMates</title>
         <link rel="stylesheet" href="/wordpress/wp-content/themes/BANDMATES./style.css">
     </head>
-    <body>        
+    <body>
+        <?php get_header(); ?>
         <section class="black-section first">
             
             <div class="left-content">
@@ -71,9 +72,7 @@
             <a class="btn">Rejoignez gratuitement</a>
             <img class="bouche" src="/wordpress/wp-content/themes/BANDMATES./images/bouche.png">
         </section>
-        <img src="/wordpress/wp-content/themes/BANDMATES./images/black white Thunder logo.svg" alt="Logo">
+        <?php get_footer(); ?>
         <script src="script.js"></script>
     </body>
 </html>
-
-<?php get_footer(); ?>
