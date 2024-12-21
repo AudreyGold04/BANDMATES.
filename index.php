@@ -47,23 +47,37 @@
                 <img class="scotch scotch-2" src="/wordpress/wp-content/themes/BANDMATES./images/scotch_transparant.png" alt="Chanteuse">
             </div>
         </section>
-    
+        
         <section class="white-section features">
-            <h2>Pourquoi BandMates ?</h2>
-            <div class="feature-cards">
-                <div class="card">
-                    <h3>Des connexions sur mesure</h3>
-                    <p>Trouvez des musiciens partageant vos influences et styles préférés.</p>
-                </div>
-                <div class="card">
-                    <h3>Formez votre groupe parfait</h3>
-                    <p>Rassemblez votre équipe pour connecter les musiciens qui s’harmonisent avec vous.</p>
-                </div>
-                <div class="card">
-                    <h3>Une communauté engagée</h3>
-                    <p>Échangez des idées et collaborez avec d'autres artistes passionnés.</p>
-                </div>
+            
+            <div class="feature-text">
+                <h1>Pourquoi BandMates ?</h1>
             </div>
+            
+            <div class="card">
+                <img class="card-scotch-1" src="/wordpress/wp-content/themes/BANDMATES./images/scotch_transparant.png" alt="Chanteuse">
+                <img class="card-scratch" src="/wordpress/wp-content/themes/BANDMATES./images/scratch.png">
+                <img class="card-image" src="/wordpress/wp-content/themes/BANDMATES./images/eclair.png">
+                <h2>Des connexions sur mesure</h2>
+                <h3>Trouvez des musiciens partageant vos influences et styles préférés.</h3>
+            </div>
+            
+            <div class="card">
+                <img class="card-scotch-2" src="/wordpress/wp-content/themes/BANDMATES./images/scotch_transparant.png" alt="Chanteuse">
+                <img class="card-scratch" src="/wordpress/wp-content/themes/BANDMATES./images/scratch.png">
+                <img class="card-image" src="/wordpress/wp-content/themes/BANDMATES./images/mains.png">
+                <h2>Formez votre groupe parfait</h2>
+                <h3>Rassemblez votre équipe pour connecter les musiciens qui s’harmonisent avec vous.</h3>
+            </div>
+            
+            <div class="card">
+                <img class="card-scotch-3" src="/wordpress/wp-content/themes/BANDMATES./images/scotch_transparant.png" alt="Chanteuse">
+                <img class="card-scratch" src="/wordpress/wp-content/themes/BANDMATES./images/scratch.png">
+                <img class="card-image" src="/wordpress/wp-content/themes/BANDMATES./images/terre.png">
+                <h2>Une communauté engagée</h2>
+                <h3>Échangez des idées et collaborez avec d'autres artistes passionnés.</h3>
+            </div>
+
         </section>
     
         <section class="black-section" data-bg-color="black">

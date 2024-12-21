@@ -17,6 +17,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: #E5E5E5;
 }
 
 section {
@@ -150,45 +151,89 @@ h2 {
 
 .features {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 3fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.features h2 {
-    
-}
-
-.features .feature-cards {
-    display: flex;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
     gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1500px;
+    margin: 0 auto; 
+}
+
+.feature-text {
+    color: #EE53CC;
+    grid-column: 1/4;
 }
   
 .card {
-    flex: 1; 
-    max-width: 40%; 
-    min-width: 250px; 
-    height: 450px; 
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 36px;
-    color: #EE53CC;
-    transition: transform 0.3s ease;
+    position: relative;
     background: #000000;
-    display: flex; 
+    color: #EE53CC;
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    border-radius: 36px;
+    justify-content: stretch; 
+    align-items: center;    
+    height: 27em;
+    width: 20em; 
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    
+    padding: 20px;
+    margin: auto;
 }
-  
+
 .card:hover {
     transform: scale(1.05);
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.card-scratch {
+    position: absolute;
+    max-width: 190%;
+    left: -50%;
+    opacity: 0.3;
+}
+
+.card-scotch-1 {
+    position: absolute;
+    max-width: 75%;
+    top: -12%;
+    right: 58%;
+}
+
+.card-scotch-2 {
+    position: absolute;
+    max-width: 75%;
+    top: 78%;
+    left: 50%;
+}
+
+.card-scotch-3 {
+    position: absolute;
+    max-width: 75%;
+    transform: scaleX(-1);
+    top: -12%;
+    left: 50%;
+}
+
+.card h2 {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    margin-top: 15%;
+}
+
+.card h3 {
+    font-size: 1.3rem;
 }
 
 .chanteuse {
