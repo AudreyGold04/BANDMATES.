@@ -48,7 +48,7 @@
             </div>
         </section>
     
-        <section class="features">
+        <section class="white-section features">
             <h2>Pourquoi BandMates ?</h2>
             <div class="feature-cards">
                 <div class="card">
@@ -73,6 +73,6 @@
             <img class="bouche" src="/wordpress/wp-content/themes/BANDMATES./images/bouche.png">
         </section>
         <?php get_footer(); ?>
-        <script src="script.js"></script>
+        <script src="/wordpress/wp-content/themes/BANDMATES./script.js"></script>
     </body>
 </html>

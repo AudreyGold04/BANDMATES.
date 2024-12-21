@@ -7,14 +7,15 @@
         <link rel="stylesheet" href="/wordpress/wp-content/themes/BANDMATES./style.css">
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="navbar">
             <div>
-                <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black white Thunder logo.svg">
+                <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/logo.png">
             </div>
             <div class="nav">
                 <a class="btn">FAQ</a>
                 <a class="btn">Support</a>
             </div>
         </header>
+        <script src="/wordpress/wp-content/themes/BANDMATES./script.js"></script>
     </body>
 </html>
