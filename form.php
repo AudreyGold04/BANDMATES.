@@ -8,10 +8,13 @@
         <link rel="stylesheet" href="/wordpress/wp-content/themes/BANDMATES./style-form.css">
     </head>
     <body>
-        <div>
-            <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black_logo.png">
-        </div>
-        <a href="/wordpress">back to homepage </a>
+        <a href="/wordpress">
+            <div>
+                <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black_logo.png">
+                back to homepage
+            </div>
+        </a>
+
         <div class="profile-container">
             
             <div class="progress-bar">
@@ -19,11 +22,11 @@
             </div>
         
 
-            <h2 class="profile-title">DÉTAILS DU PROFIL</h2>
+            <h1 class="profile-title">DÉTAILS DU PROFIL</h1>
         
     
             <div class="profile-pic">
-                <img src="path/to/photo.jpg" alt="Photo de profil" id="profileImage">
+                <img src="/wordpress/wp-content/themes/BANDMATES./images/photo_profile.png" alt="Photo de profil" id="profileImage">
                 <label for="fileInput" class="upload-icon">
                     📷
                 </label>

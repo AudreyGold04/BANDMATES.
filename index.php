@@ -1,5 +1,3 @@
-<?php get_header(); ?>
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>

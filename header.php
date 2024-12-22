@@ -9,7 +9,9 @@
     <body>
         <header class="header" id="navbar">
             <div>
-                <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/logo.png">
+                <a href="/wordpress">
+                    <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/logo.png">
+                </a>
             </div>
             <div class="nav">
                 <a class="btn">FAQ</a>
