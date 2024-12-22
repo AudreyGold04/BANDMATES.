@@ -168,3 +168,57 @@ h1 {
     background-color: #b3ff66;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.personal-pic {
+    position: relative;
+    display: inline-block;
+}
+
+.personal-pic img {
+    width: 256px;
+    height: 256px;
+    border-radius: 25%;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+}
+
+.upload-plus {
+    position: absolute;
+    color: #b3ff66;
+    background-color: #000;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    cursor: pointer;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+}
+
+.card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}

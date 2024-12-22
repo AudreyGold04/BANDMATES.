@@ -214,10 +214,42 @@
                 <h1 class="profile-title">AJOUTE TES MEILLEURES PHOTOS/VIDÉOS</h1>
                 
                 <form class="profile-form">
-                    <input type="image">
-                    <input type="image">
-                    <input type="image">
-                    <input type="image">
+                    
+                    <div class="card">
+                        <div class="card-info">
+                            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                            <p class="title">+</p>
+                        </div>
+                    </div>
+
+                    <label for="fileInput" class="upload-plus">
+                        <div class="card">+</div>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">          
+                    </label>
+
+                    <div class="personal-pic">
+                        <img src="" alt="Photo personnel" id="profileImage">
+                        <label for="fileInput" class="upload-plus">
+                            +
+                        </label>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                    </div>
+
+                    <div class="personal-pic">
+                        <img src="" alt="Photo personnel" id="profileImage">
+                        <label for="fileInput" class="upload-plus">
+                            +
+                        </label>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                    </div>
+
+                    <div class="personal-pic">
+                        <img src="" alt="Photo personnel" id="profileImage">
+                        <label for="fileInput" class="upload-plus">
+                            +
+                        </label>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                    </div>
                 
                     <div class="back_and_go">
                         <button type="button" class="btn-back">RETOUR</button>
