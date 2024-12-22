@@ -36,9 +36,7 @@
 
             <div class="left-content">
                 <h1>Formez votre groupe<br>parfait</h2>
-                <h2>
-                Trouvez des musiciens qui vibrent comme vous. Formez votre groupe, partagez votre passion et jouez ensemble.
-                </h2>
+                <h2>Trouvez des musiciens qui vibrent comme vous. Formez votre groupe, partagez votre passion et jouez ensemble.</h2>
             </div>
             
             <div class="right-content">
@@ -80,12 +78,20 @@
 
         </section>
     
-        <section class="black-section" data-bg-color="black">
-            <h2>C'est le moment de passer à l'action</h2>
-            <p>Faites le premier pas aujourd’hui et transformez votre rêve en réalité.</p>
-            <a class="btn">Rejoignez gratuitement</a>
-            <img class="bouche" src="/wordpress/wp-content/themes/BANDMATES./images/bouche.png">
+        <section class="black-section fifth">
+
+            <div class="left-content-5">
+                <h1>C'est le moment de<br>passer à l'action</h1>
+                <h2>Faites le premier pas aujourd’hui et<br>transformez votre rêve en réalité.</h2>
+                <a class="btn">Rejoignez gratuitement</a>
+            </div>
+
+            <div class="right-content-5">
+                <img class="bouche" src="/wordpress/wp-content/themes/BANDMATES./images/bouche.png">
+            </div>
+
         </section>
+
         <?php get_footer(); ?>
         <script src="/wordpress/wp-content/themes/BANDMATES./script.js"></script>
     </body>
