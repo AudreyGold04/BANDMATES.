@@ -58,15 +58,15 @@
                 <h1 class="profile-title">JE SUIS...</h1>
                 
                 <form class="profile-form">
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>UNE FEMME</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>UN HOMME</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>AUTRE</p>
                     </button>
                 
@@ -88,27 +88,27 @@
                 <h1 class="profile-title">QUEL EST VOTRE INSTRUMENT PRINCIPAL ?</h1>
                 
                 <form class="profile-form">
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>GUITARE</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>PIANO</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>BASSE</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>CHANT</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>BATTERIE</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>AUTRE</p>
                     </button>
                 
@@ -131,31 +131,31 @@
                 <h1 class="profile-title">QUEL EST VOTRE STYLE MUSICAL PRÉFÉRÉ ?</h1>
                 
                 <form class="profile-form">
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>ROCK</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>JAZZ</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>BLUES</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>CLASSIQUE</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>MÉTAL</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>POP</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>AUTRE</p>
                     </button>
                 
@@ -178,19 +178,19 @@
                 <h1 class="profile-title">QUEL EST VOTRE NIVEAU ?</h1>
                 
                 <form class="profile-form">
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>DÉBUTANT</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>INTERMÉDIAIRE</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>AVANCÉ</p>
                     </button>
 
-                    <button class="inactive">
+                    <button type="button" class="inactive">
                         <p>PROFESSIONNEL</p>
                     </button>
                 
