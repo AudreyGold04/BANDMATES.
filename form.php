@@ -253,7 +253,9 @@
                 
                     <div class="back_and_go">
                         <button type="button" class="btn-back">RETOUR</button>
-                        <button type="button" class="btn-continue">CONTINUER</button>
+                        <button type="button" class="last-btn">
+                            <a href="/wordpress/wp-content/themes/BANDMATES./dashboard.php">CONTINUER</a>
+                        </button>
                     </div>
                 </form>
             </div>

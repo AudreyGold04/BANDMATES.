@@ -222,3 +222,19 @@ h1 {
 .card:active {
     transform: scale(0.95) rotateZ(1.7deg);
 }
+
+.last-btn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #b3ff66;
+    border: none;
+    border-radius: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+ 
+.last-btn:hover {
+    opacity: 0.9;
+}
