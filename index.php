@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+ git add index.php 
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -14,7 +14,7 @@
                 <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black white Thunder logo.svg">
             </div>
             <div class="nav">
-                <button class="btn">FAQ</button>
+            <a href="faq.php" class="btn FAQ">FAQ</a>
                 <button class="btn">Support</button>
             </div>
         </header>
