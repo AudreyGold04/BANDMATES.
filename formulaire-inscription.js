@@ -48,3 +48,24 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
       reader.readAsDataURL(file);
   }
 });
+
+document.querySelectorAll("input[type='file']").forEach((input) => {
+  input.addEventListener("change", (event) => {
+      const file = event.target.files[0]; // Récupère le fichier
+      if (file) {
+          const reader = new FileReader();
+          reader.onload = (e) => {
+              // Associe l'image au bon input
+              const label = input.closest("label");
+              const img = label.querySelector("img");
+              const uploadText = label.querySelector(".upload-text");
+
+              // Met à jour la carte
+              img.src = e.target.result; // Affiche l'image
+              img.style.display = "block"; // Rend l'image visible
+              uploadText.style.display = "none"; // Cache le "+"
+          };
+          reader.readAsDataURL(file); // Lit le fichier
+      }
+  });
+});

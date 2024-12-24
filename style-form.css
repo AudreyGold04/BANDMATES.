@@ -36,7 +36,7 @@ h1 {
     transform: translateY(0);
     transition: transform 0.5s ease-in-out;
     overflow: hidden;
-    margin-top: -0.5%;
+    margin-top: -1.5%;
 }
 
 .profile-container {
@@ -184,19 +184,14 @@ h1 {
     border: 2px solid #e0e0e0;
 }
 
-.upload-plus {
-    position: absolute;
-    color: #b3ff66;
-    background-color: #000;
-    font-size: 1.6rem;
-    border-radius: 50%;
-    padding: 2%;
-    padding-left: 4%;
-    padding-right: 4%;
-    cursor: pointer;
+.card-pos {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 25%;
 }
 
 .card {
+    position: relative;
     box-sizing: border-box;
     width: 190px;
     height: 254px;
@@ -214,6 +209,40 @@ h1 {
     user-select: none;
     font-weight: bolder;
     color: black;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 17px;
+    position: absolute;
+}
+
+.card img[src] {
+    display: block;
+}
+
+.placeholder {
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card img[src=""] {
+    display: none;
+}
+
+.upload-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: black;
 }
 
 .card:hover {
@@ -225,16 +254,21 @@ h1 {
     transform: scale(0.95) rotateZ(1.7deg);
 }
 
+
 .last-btn {
     margin-top: 20px;
     padding: 10px;
     background-color: #000;
-    color: #b3ff66;
     border: none;
     border-radius: 15px;
     font-size: 2rem;
     cursor: pointer;
     text-transform: uppercase;
+}
+
+.last-btn a {
+    color: #b3ff66;
+    text-decoration: none;
 }
  
 .last-btn:hover {

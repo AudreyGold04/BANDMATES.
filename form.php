@@ -214,41 +214,39 @@
                 <h1 class="profile-title">AJOUTE TES MEILLEURES PHOTOS/VIDÉOS</h1>
                 
                 <form class="profile-form">
-                    
-                    <div class="card">
-                        <div class="card-info">
-                            <input type="file" id="fileInput" accept="image/*" style="display: none;">
-                            <p class="title">+</p>
-                        </div>
-                    </div>
 
-                    <label for="fileInput" class="upload-plus">
-                        <div class="card">+</div>
-                        <input type="file" id="fileInput" accept="image/*" style="display: none;">          
-                    </label>
-
-                    <div class="personal-pic">
-                        <img src="" alt="Photo personnel" id="profileImage">
-                        <label for="fileInput" class="upload-plus">
-                            +
+                    <div class="card-pos">
+                        <label for="fileInput2" class="upload-plus">
+                            <div class="card">
+                                <span>+</span>
+                                <img src="" alt="Photo de profil" id="image2">
+                            </div>
+                            <input type="file" id="fileInput2" accept="image/*" style="display: none;">          
                         </label>
-                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
-                    </div>
 
-                    <div class="personal-pic">
-                        <img src="" alt="Photo personnel" id="profileImage">
-                        <label for="fileInput" class="upload-plus">
-                            +
+                        <label for="fileInput3" class="upload-plus">
+                            <div class="card">
+                                <span>+</span>
+                                <img src="" alt="Photo de profil" id="image3">
+                            </div>
+                            <input type="file" id="fileInput3" accept="image/*" style="display: none;">          
                         </label>
-                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
-                    </div>
 
-                    <div class="personal-pic">
-                        <img src="" alt="Photo personnel" id="profileImage">
-                        <label for="fileInput" class="upload-plus">
-                            +
+                        <label for="fileInput4" class="upload-plus">
+                            <div class="card">
+                                <span>+</span>
+                                <img src="" alt="Photo de profil" id="image4">
+                            </div>
+                            <input type="file" id="fileInput4" accept="image/*" style="display: none;">          
                         </label>
-                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+
+                        <label for="fileInput5" class="upload-plus">
+                            <div class="card">
+                                <span>+</span>
+                                <img src="" alt="Photo de profil" id="image5">
+                            </div>
+                            <input type="file" id="fileInput5" accept="image/*" style="display: none;">          
+                        </label>
                     </div>
                 
                     <div class="back_and_go">
