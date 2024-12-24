@@ -63,7 +63,7 @@ h1 {
 }
 
 .progress {
-    width: 20%;
+    width: 17%;
     height: 100%;
     background-color: #ff69b4;
     border-radius: 5px;
@@ -187,7 +187,7 @@ h1 {
 .card-pos {
     display: flex;
     gap: 40px;
-    margin-bottom: 25%;
+    margin-bottom: 5%;
 }
 
 .card {
@@ -275,3 +275,59 @@ h1 {
     opacity: 0.9;
 }
 
+textarea {
+    display: block;
+    min-width: 10%;
+    width: 40%;
+    min-height: 20%;
+    height: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+.audio-upload-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.audio-upload-label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.audio-button {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.audio-button:hover {
+    box-shadow: 0 0 10px #ff69b4;
+}
+
+.audio-icon {
+    font-size: 2rem;
+    color: #ff69b4;
+    pointer-events: none;
+    position: absolute;
+}
+
+.audio-player {
+    margin-top: 20px;
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+}
