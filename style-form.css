@@ -36,6 +36,7 @@ h1 {
     transform: translateY(0);
     transition: transform 0.5s ease-in-out;
     overflow: hidden;
+    margin-top: -0.5%;
 }
 
 .profile-container {
@@ -48,6 +49,7 @@ h1 {
     width: 100%;
     padding: 10px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .progress-bar {
@@ -120,7 +122,7 @@ h1 {
 }
 
 .btn-continue {
-    margin-top: 20px;
+    margin-top: 20%;
     padding: 10px;
     background-color: #000;
     color: #b3ff66;
@@ -238,3 +240,4 @@ h1 {
 .last-btn:hover {
     opacity: 0.9;
 }
+
