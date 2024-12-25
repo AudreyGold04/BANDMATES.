@@ -173,6 +173,7 @@
                     <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
+                    <div class="progress"></div>
                 </div>
             
                 <h1 class="profile-title">QUEL EST TON NIVEAU ?</h1>
@@ -204,6 +205,7 @@
             <div class="profile-container">
                 
                 <div class="progress-bar">
+                    <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
@@ -264,6 +266,7 @@
                     <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
+                    <div class="progress"></div>
                 </div>
 
                 <h1 class="profile-title">PRÉSENTE TOI EN QUELQUES MOTS</h1>
@@ -281,11 +284,22 @@
                     <div class="audio-player" style="display: none;">
                         <audio controls id="audioPlayer">
                             <source id="audioSource" src="">
-                            ahhhh
                         </audio>
                     </div>
                 </div>
 
+                <div class="back_and_go">
+                        <button type="button" class="btn-back">RETOUR</button>
+                        <button type="button" class="btn-continue">CONTINUER</button>
+                </div>
+            </div>
+
+            <div class="profile-container">
+                <div class="end-form">
+                    <h1>BRAVO ! TU AS FINI TON PROFIL !</h1>
+                    <img src="/wordpress/wp-content/themes/BANDMATES./images/etoiles-noires.png" alt="etoile" class="etoile-1">
+                    <img src="/wordpress/wp-content/themes/BANDMATES./images/etoiles-noires.png" alt="etoile" class="etoile-2">
+                </div>
                 <div class="back_and_go">
                     <button type="button" class="btn-back">RETOUR</button>
                     <button type="button" class="last-btn">
