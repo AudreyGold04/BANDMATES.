@@ -1,3 +1,16 @@
+eye_icon = document.getElementById("eye_icon");
+password_input = document.getElementById("password_input");
+
+eye_icon.onclick = function () {
+    if (password_input.type == "password") {
+        password_input.type = "text";
+        eye_icon.src = "/wordpress/wp-content/themes/BANDMATES./images/open_eye.png"
+    } else {
+        password_input.type = "password";
+        eye_icon.src = "/wordpress/wp-content/themes/BANDMATES./images/close_eye.png"
+    }
+}
+
 const stepsWrapper = document.querySelector(".steps-wrapper");
 const nextBtns = document.querySelectorAll(".btn-continue");
 const backBtns = document.querySelectorAll(".btn-back");

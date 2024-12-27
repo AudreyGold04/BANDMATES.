@@ -62,11 +62,32 @@ h1 {
 }
 
 .progress {
-    width: 14.3%;
+    width: 12.5%;
     height: 100%;
     background-color: #ff69b4;
     border-radius: 5px;
-}  
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 2.5rem;
+    box-sizing: border-box;
+}
+
+.password-container .eye {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
 
 .profile-pic {
     position: relative;
