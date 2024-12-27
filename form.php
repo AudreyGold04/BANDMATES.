@@ -85,7 +85,7 @@
                     <div class="progress"></div>
                 </div>
             
-                <h1 class="profile-title">QUEL EST VOTRE INSTRUMENT PRINCIPAL ?</h1>
+                <h1 class="profile-title">QUEL EST TON INSTRUMENT PRINCIPAL ?</h1>
                 
                 <form class="profile-form">
                     <button type="button" class="inactive">
@@ -128,7 +128,7 @@
                     <div class="progress"></div>
                 </div>
             
-                <h1 class="profile-title">QUEL EST VOTRE STYLE MUSICAL PRÉFÉRÉ ?</h1>
+                <h1 class="profile-title">QUEL EST TON STYLE MUSICAL PRÉFÉRÉ ?</h1>
                 
                 <form class="profile-form">
                     <button type="button" class="inactive">
@@ -173,9 +173,10 @@
                     <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
+                    <div class="progress"></div>
                 </div>
             
-                <h1 class="profile-title">QUEL EST VOTRE NIVEAU ?</h1>
+                <h1 class="profile-title">QUEL EST TON NIVEAU ?</h1>
                 
                 <form class="profile-form">
                     <button type="button" class="inactive">
@@ -209,55 +210,102 @@
                     <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
+                    <div class="progress"></div>
                 </div>
             
                 <h1 class="profile-title">AJOUTE TES MEILLEURES PHOTOS/VIDÉOS</h1>
                 
                 <form class="profile-form">
-                    
-                    <div class="card">
-                        <div class="card-info">
-                            <input type="file" id="fileInput" accept="image/*" style="display: none;">
-                            <p class="title">+</p>
-                        </div>
-                    </div>
 
-                    <label for="fileInput" class="upload-plus">
-                        <div class="card">+</div>
-                        <input type="file" id="fileInput" accept="image/*" style="display: none;">          
-                    </label>
-
-                    <div class="personal-pic">
-                        <img src="" alt="Photo personnel" id="profileImage">
-                        <label for="fileInput" class="upload-plus">
-                            +
+                    <div class="card-pos">
+                        <label for="fileInput2" class="upload-plus">
+                            <div class="card">
+                                <span>+</span>
+                                <img src="" alt="Photo de profil" id="image2">
+                            </div>
+                            <input type="file" id="fileInput2" accept="image/*" style="display: none;">          
                         </label>
-                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
-                    </div>
 
-                    <div class="personal-pic">
-                        <img src="" alt="Photo personnel" id="profileImage">
-                        <label for="fileInput" class="upload-plus">
-                            +
+                        <label for="fileInput3" class="upload-plus">
+                            <div class="card">
+                                <span>+</span>
+                                <img src="" alt="Photo de profil" id="image3">
+                            </div>
+                            <input type="file" id="fileInput3" accept="image/*" style="display: none;">          
                         </label>
-                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
-                    </div>
 
-                    <div class="personal-pic">
-                        <img src="" alt="Photo personnel" id="profileImage">
-                        <label for="fileInput" class="upload-plus">
-                            +
+                        <label for="fileInput4" class="upload-plus">
+                            <div class="card">
+                                <span>+</span>
+                                <img src="" alt="Photo de profil" id="image4">
+                            </div>
+                            <input type="file" id="fileInput4" accept="image/*" style="display: none;">          
                         </label>
-                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+
+                        <label for="fileInput5" class="upload-plus">
+                            <div class="card">
+                                <span>+</span>
+                                <img src="" alt="Photo de profil" id="image5">
+                            </div>
+                            <input type="file" id="fileInput5" accept="image/*" style="display: none;">          
+                        </label>
                     </div>
                 
                     <div class="back_and_go">
                         <button type="button" class="btn-back">RETOUR</button>
-                        <button type="button" class="last-btn">
-                            <a href="/wordpress/wp-content/themes/BANDMATES./dashboard.php">CONTINUER</a>
-                        </button>
+                        <button type="button" class="btn-continue">CONTINUER</button>
                     </div>
                 </form>
+            </div>
+
+            <div class="profile-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                    <div class="progress"></div>
+                    <div class="progress"></div>
+                    <div class="progress"></div>
+                    <div class="progress"></div>
+                    <div class="progress"></div>
+                    <div class="progress"></div>
+                </div>
+
+                <h1 class="profile-title">PRÉSENTE TOI EN QUELQUES MOTS</h1>
+
+                <textarea placeholder="Écrivez ici..."></textarea>
+
+                <div class="audio-upload-container">
+                    <h2>VEUX-TU PRÉSENTER UNE DÉMO ?</h2>
+                    <label for="audioInput" class="audio-upload-label">
+                        <div class="audio-button">
+                            <span class="audio-icon">↓</span>
+                        </div>
+                        <input type="file" id="audioInput" accept="audio/*" style="display: none;">
+                    </label>
+                    <div class="audio-player" style="display: none;">
+                        <audio controls id="audioPlayer">
+                            <source id="audioSource" src="">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="back_and_go">
+                        <button type="button" class="btn-back">RETOUR</button>
+                        <button type="button" class="btn-continue">CONTINUER</button>
+                </div>
+            </div>
+
+            <div class="profile-container">
+                <div class="end-form">
+                    <h1>BRAVO ! TU AS FINI TON PROFIL !</h1>
+                    <img src="/wordpress/wp-content/themes/BANDMATES./images/etoiles-noires.png" alt="etoile" class="etoile-1">
+                    <img src="/wordpress/wp-content/themes/BANDMATES./images/etoiles-noires.png" alt="etoile" class="etoile-2">
+                </div>
+                <div class="back_and_go">
+                    <button type="button" class="btn-back">RETOUR</button>
+                    <button type="button" class="last-btn">
+                        <a href="/wordpress/wp-content/themes/BANDMATES./dashboard.php">CONTINUER</a>
+                    </button>
+                </div>
             </div>
         </div>
         <script src="formulaire-inscription.js"></script>

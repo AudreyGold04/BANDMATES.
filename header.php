@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BandMates</title>
-        <link rel="stylesheet" href="/wordpress/wp-content/themes/BANDMATES./style.css">
+        <link rel="stylesheet" href="/wordpress/wp-content/themes/BANDMATES./style-home.css">
+        <?php wp_head() ?>
     </head>
     <body>
         <header class="header" id="navbar">
@@ -18,6 +19,3 @@
                 <a class="btn">Support</a>
             </div>
         </header>
-        <script src="/wordpress/wp-content/themes/BANDMATES./script.js"></script>
-    </body>
-</html>

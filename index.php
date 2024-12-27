@@ -1,24 +1,5 @@
-<?php get_header(); ?>
- git add index.php 
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BandMates</title>
-        <link rel="stylesheet" href="/wordpress/wp-content/themes/BANDMATES./style.css">
-    </head>
-    <body>
-        <header class="header">
-            <div>
-                <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black white Thunder logo.svg">
-            </div>
-            <div class="nav">
-            <a href="faq.php" class="btn FAQ">FAQ</a>
-                <button class="btn">Support</button>
-            </div>
-        </header>
-        
+
+        <?php get_header(); ?>
         <section class="black-section first">
             
             <div class="left-content">
@@ -67,16 +48,5 @@
                 </div>
             </div>
         </section>
-    
-        <section class="black-section" data-bg-color="black">
-            <h2>C'est le moment de passer à l'action</h2>
-            <p>Faites le premier pas aujourd’hui et transformez votre rêve en réalité.</p>
-            <button class="btn">Rejoignez gratuitement</button>
-            <img class="bouche" src="/wordpress/wp-content/themes/BANDMATES./images/bouche.png">
-        </section>
-        <img src="/wordpress/wp-content/themes/BANDMATES./images/black white Thunder logo.svg" alt="Logo">
-        <script src="script.js"></script>
-    </body>
-</html>
 
-<?php get_footer(); ?>
+        <?php get_footer(); ?>
