@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BandMates</title>
-        <link rel="stylesheet" href="/wordpress/wp-content/themes/BANDMATES./style.css">
-        <link rel="stylesheet" href="/wordpress/wp-content/themes/BANDMATES./style-home.css">
-    </head>
-    <body>
+
         <?php get_header(); ?>
         <section class="black-section first">
             
@@ -92,6 +83,3 @@
         </section>
 
         <?php get_footer(); ?>
-        <script src="/wordpress/wp-content/themes/BANDMATES./script.js"></script>
-    </body>
-</html>
