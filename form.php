@@ -13,9 +13,36 @@
         </a>
 
         <div class="steps-wrapper">
+
             <div class="profile-container active">
                 
                 <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            
+                <h1 class="profile-title">ENTRE TON EMAIL ET CRÉE TON MOT DE PASSE</h1>
+                
+                <form class="profile-form">
+                    <label for="prenom">Email</label>
+                    <input type="text" name="mail" placeholder="JESSICA@EXEMPLE.COM" required>
+                
+                    <label for="nom">Mot de passe</label>
+                    <div class="password-container">
+                        <input type="password" id="password_input" name="password" placeholder="*********" required>
+                        <img class="eye" src="/wordpress/wp-content/themes/BANDMATES./images/close_eye.png" alt="eye icon" id="eye_icon">
+                    </div>
+
+                    <div class="back_and_go">
+                        <button type="button" class="btn-back">RETOUR</button>
+                        <button type="button" class="btn-continue">CONTINUER</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="profile-container active">
+                
+                <div class="progress-bar">
+                    <div class="progress"></div>
                     <div class="progress"></div>
                 </div>
             
@@ -53,6 +80,7 @@
                 <div class="progress-bar">
                     <div class="progress"></div>
                     <div class="progress"></div>
+                    <div class="progress"></div>
                 </div>
             
                 <h1 class="profile-title">JE SUIS...</h1>
@@ -80,6 +108,7 @@
             <div class="profile-container">
                 
                 <div class="progress-bar">
+                    <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
@@ -122,6 +151,7 @@
             <div class="profile-container">
                 
                 <div class="progress-bar">
+                    <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
@@ -174,6 +204,7 @@
                     <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
+                    <div class="progress"></div>
                 </div>
             
                 <h1 class="profile-title">QUEL EST TON NIVEAU ?</h1>
@@ -205,6 +236,7 @@
             <div class="profile-container">
                 
                 <div class="progress-bar">
+                    <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
@@ -260,6 +292,7 @@
 
             <div class="profile-container">
                 <div class="progress-bar">
+                    <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
                     <div class="progress"></div>
