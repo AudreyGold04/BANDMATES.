@@ -186,6 +186,14 @@
                     </button>
 
                     <button type="button" class="inactive">
+                        <p>RAP/HIP-HOP</p>
+                    </button>
+
+                    <button type="button" class="inactive">
+                        <p>ELECTRO</p>
+                    </button>
+
+                    <button type="button" class="inactive">
                         <p>AUTRE</p>
                     </button>
                 

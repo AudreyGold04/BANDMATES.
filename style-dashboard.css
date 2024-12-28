@@ -306,7 +306,7 @@ body {
         
 .listing {
     margin: 0;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 0;
     /* position: absolute; */
     /* align-items: center;
@@ -370,11 +370,11 @@ body {
 }
   
 .profile-card.to-left {
-    transform: translateX(-30rem) rotate(-30deg) !important;
+    transform: translateX(-100rem) rotate(-30deg) !important;
 }
   
 .profile-card.to-right {
-    transform: translateX(30rem) rotate(30deg) !important;
+    transform: translateX(100rem) rotate(30deg) !important;
 }
   
 .profile-card.below {
@@ -433,11 +433,23 @@ body {
     width: 100%;
     background-color: #000000;
     border-radius: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; */
+    position: relative;
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1rem; */
 }
-  
+
 .profile-card-description {
+    padding: 1.3rem;
     font-family: 'Abel', sans-serif !important;
-    padding: 1rem;
+    /* padding: 0.7rem; */
     text-align: center;
     font-size: 1.2rem;
     /* line-height: 6.5rem; */
@@ -445,6 +457,33 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     /* white-space: nowrap; */
+    line-height: 1.6rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    /* flex: 1; */
+    max-height: 6rem;
+    margin: 0;
+    padding-right: 0.5rem;
+    /* justify-items: center; */
+}
+
+.read-more-btn {
+    color: #EE53CC;
+    /* background-color: #26C6DA; */
+    font-size: 1.3rem;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: bold;
+    padding: 0.5rem;
+    align-self: center;
+    transition: color 0.3s ease;
+    /* right: 1rem; */
+    z-index: 10;
+}
+
+.read-more-btn:hover {
+    color: #ff70e4;
 }
   
 .profile-card-choice {
@@ -485,10 +524,12 @@ body {
   
 .profile-card-choice.m--reject {
     background: #EE53CC;
+    border-radius: 35px;
 }
   
 .profile-card-choice.m--like {
     background: #A6FA81;
+    border-radius: 35px;
 }
   
 .profile-card-choice.m--like:after {
@@ -503,4 +544,123 @@ body {
     width: 100%;
     height: 100%;
     cursor: grab;
+}
+
+.expanded-profile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    overflow-y: auto;
+}
+  
+.expanded-profile.active {
+    opacity: 1;
+    visibility: visible;
+}
+  
+  /* .close-expanded {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1001;
+  } */
+  
+.expanded-profile .profile-info {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 2rem;
+}
+  
+.expanded-profile .expanded-description {
+    font-family: 'Abel', sans-serif !important;
+    width: 80%;
+    max-width: 800px;
+    margin: 1rem 0;
+    color: #D2D1CE;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+  
+.expanded-profile .audio-player {
+    width: 80%;
+    max-width: 800px;
+    color: #fff;
+    margin-top: 2rem;
+}
+  
+.player-timeline {
+    width: 100%;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+    margin: 1rem 0;
+    position: relative;
+}
+  
+.timeline-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    background: #EE53CC;
+    border-radius: 2px;
+}
+  
+.player-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: #D2D1CE;
+    margin-bottom: 1rem;
+}
+  
+.play-pause-btn {
+    font-family: 'Abel', sans-serif !important;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-back {
+    font-family: 'Abel', sans-serif !important;
+    display: block;
+    position: absolute;
+    padding: 1px 25px;
+    background-color: #EE53CC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+    left: 5%;
+    top: 7.5%;
+    /* margin: 10px auto; */
+}
+
+.btn-back:hover {
+    background-color: #d944b2;
 }
