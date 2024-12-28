@@ -4,7 +4,14 @@ Theme Name: BandMates Theme
 
 @font-face {
     font-family: 'Zing';
-    src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
+    src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/Abel-Regular.ttf") format('TrueType');
     font-weight: normal;
     font-style: normal;
 }

@@ -9,8 +9,8 @@
 <body>
     <header class="header" id="navbar">
         <div>
-            <a href="/wordpress">
-                <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/logo.png">
+            <a href="<?php echo get_home_url(); ?>">
+                <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/images/logo.png">
             </a>
         </div>
         <div class="nav">

@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
           cardsCounter++;
           if (cardsCounter === numOfCards) {
             cardsCounter = 0;
-            document.querySelectorAll(".demo__card").forEach(card => {
+            document.querySelectorAll(".profile-card").forEach(card => {
               card.classList.remove("below");
             });
           }
@@ -68,8 +68,8 @@ document.addEventListener("DOMContentLoaded", function() {
       setTimeout(() => {
         card.style.transform = "";
         card.classList.remove("reset");
-        card.querySelector(".demo__card__choice.m--reject").style.opacity = "";
-        card.querySelector(".demo__card__choice.m--like").style.opacity = "";
+        card.querySelector(".profile-card-choice.m--reject").style.opacity = "";
+        card.querySelector(".profile-card-choice.m--like").style.opacity = "";
   
         pullDeltaX = 0;
         animating = false;
@@ -77,12 +77,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     document.addEventListener("mousedown", function(e) {
-      if (e.target.closest(".demo__card:not(.inactive)")) {
+      if (e.target.closest(".profile-card:not(.inactive)")) {
         if (animating) return;
   
-        card = e.target.closest(".demo__card");
-        cardReject = card.querySelector(".demo__card__choice.m--reject");
-        cardLike = card.querySelector(".demo__card__choice.m--like");
+        card = e.target.closest(".profile-card");
+        cardReject = card.querySelector(".profile-card-choice.m--reject");
+        cardLike = card.querySelector(".profile-card-choice.m--like");
         const startX = e.pageX;
   
         function moveHandler(e) {
@@ -105,12 +105,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   
     document.addEventListener("touchstart", function(e) {
-      if (e.target.closest(".demo__card:not(.inactive)")) {
+      if (e.target.closest(".profile-card:not(.inactive)")) {
         if (animating) return;
   
-        card = e.target.closest(".demo__card");
-        cardReject = card.querySelector(".demo__card__choice.m--reject");
-        cardLike = card.querySelector(".demo__card__choice.m--like");
+        card = e.target.closest(".profile-card");
+        cardReject = card.querySelector(".profile-card-choice.m--reject");
+        cardLike = card.querySelector(".profile-card-choice.m--like");
         const startX = e.touches[0].pageX;
   
         function moveHandler(e) {
