@@ -1,15 +1,28 @@
 const eye_icon = document.getElementById("eye_icon");
+const eye_icon2 = document.getElementById("eye_icon2");
 const password_input = document.getElementById("password_input");
 
+eye_icon2.style.display = 'none';
+
 eye_icon.onclick = function () {
-    if (password_input.type == "password") {
+    if (password_input.type === "password") {
         password_input.type = "text";
-        eye_icon.src = "/wordpress/wp-content/themes/BANDMATES./images/open_eye.png"
-    } else {
-        password_input.type = "password";
-        eye_icon.src = "/wordpress/wp-content/themes/BANDMATES./images/close_eye.png"
+        eye_icon.style.display = "none";
+        eye_icon.style.zIndex = 0;
+        eye_icon2.style.display = "block";
+        eye_icon2.style.zIndex = 10;
     }
-}
+};
+
+eye_icon2.onclick = function () {
+    if (password_input.type === "text") {
+        password_input.type = "password";
+        eye_icon2.style.display = "none";
+        eye_icon2.style.zIndex = 0;
+        eye_icon.style.display = "block";
+        eye_icon.style.zIndex = 10;
+    }
+};
 
 const stepsWrapper = document.querySelector(".steps-wrapper");
 const nextBtns = document.querySelectorAll(".btn-continue");
@@ -24,7 +37,7 @@ nextBtns.forEach((btn) => {
         let isValid = true;
 
         inputs.forEach((input) => {
-            if (!input.value.trim()) {
+            if (!(input.type === 'hidden') && !input.value.trim()) {
                 isValid = false;
                 input.style.border = "2px solid red";
             } else {
@@ -81,6 +94,51 @@ document.querySelectorAll("input[type='file']").forEach((input) => {
           reader.readAsDataURL(file);
       }
   });
+});
+
+document.querySelectorAll('.inactive').forEach((button) => {
+    button.addEventListener('click', () => {
+        const container = button.closest('.profile-container');
+        const hiddenInput = container.querySelector('input[type="hidden"]');
+
+        if (hiddenInput) {
+            hiddenInput.value = button.getAttribute('data-value');
+        }
+
+        container.querySelectorAll('.inactive').forEach((btn) => {
+            btn.style.backgroundColor = '';
+        });
+
+        button.style.backgroundColor = '#b3ff66';
+    });
+});
+
+document.querySelectorAll('.inactive_2').forEach((button) => {
+    button.addEventListener('click', () => {
+        const container = button.closest('.profile-container');
+        const hiddenInputs = container.querySelectorAll('input[type="hidden"]');
+
+        const buttonValue = button.getAttribute('data-value');
+        let valueSet = false;
+
+        hiddenInputs.forEach((hiddenInput) => {
+            if (hiddenInput.value === buttonValue) {
+                hiddenInput.value = '';
+                valueSet = true;
+                button.style.backgroundColor = '';
+            }
+        });
+
+        if (!valueSet) {
+            hiddenInputs.forEach((hiddenInput) => {
+                if (!hiddenInput.value && !valueSet) {
+                    hiddenInput.value = buttonValue;
+                    valueSet = true;
+                    button.style.backgroundColor = '#b3ff66';
+                }
+            });
+        }
+    });
 });
 
 document.getElementById('audioInput').addEventListener('change', function (event) {

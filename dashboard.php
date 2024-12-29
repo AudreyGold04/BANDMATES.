@@ -8,23 +8,23 @@ get_header();
 <div class="dashboard">
 
     <div class="sidebar">
-        <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black_logo.png" alt="Logo">
+        <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/images/black_logo.png" alt="Logo">
         <div class="user-profile">
-            <img src="/wordpress/wp-content/themes/BANDMATES./images/photo-profile-defaut.png" alt="Profile" class="user-profile-pic">
+            <img src="<?php echo get_stylesheet_directory_uri()?>/images/photo-profile-defaut.png" alt="Profile" class="user-profile-pic">
             <h2>Jessica</h2>
         </div>
         <nav>
             <div class="nav-item">
-                <img src="/wordpress/wp-content/themes/BANDMATES./images/symbol-person.png" class="symbol">
+                <img src="<?php echo get_stylesheet_directory_uri()?>/images/symbol-person.png" class="symbol">
                 <p>Profil</p>
             </div>
             <div class="nav-item">
-                <img src="/wordpress/wp-content/themes/BANDMATES./images/symbol-message.png" class="symbol">
+                <img src="<?php echo get_stylesheet_directory_uri()?>/images/symbol-message.png" class="symbol">
                 <p>Messages</p>
             </div>
 
             <div class="nav-item">
-                <img src="/wordpress/wp-content/themes/BANDMATES./images/symbol-settings.png" class="symbol">
+                <img src="<?php echo get_stylesheet_directory_uri()?>/images/symbol-settings.png" class="symbol">
                 <p>Paramètres</p>
             </div>
         </nav>
@@ -34,7 +34,7 @@ get_header();
             <div class="profiles-cont">
                 <div class="profile-card">
                     <div class="profile-info lime">
-                        <img src="/wordpress/wp-content/themes/BANDMATES./images/groupe.jpeg" class="img-card">
+                        <img src="<?php echo get_stylesheet_directory_uri()?>/images/groupe.jpeg" class="img-card">
                         <div class="info-block">
                             <p class="profile-card-name">BLUSH</p>
                             <div class="tags">
@@ -53,7 +53,7 @@ get_header();
                         On répète régulièrement en semaine et parfois le week-end, dans une ambiance cool et détendue, mais avec l’envie de faire avancer les choses. Si ça te parle, envoie-nous un message – on a hâte de t’entendre ! 🎶🎹
                         </p>
                         <a href="#" class="read-more-btn">Lire plus</a>
-                        <audio id="audio" src="/wordpress/wp-content/themes/BANDMATES./assets/music/instru_blush.mp3" style="display: none;"></audio>
+                        <audio id="audio" src="<?php echo get_stylesheet_directory_uri()?>/assets/music/instru_blush.mp3" style="display: none;"></audio>
                     </div>
                     <div class="profile-card-choice m--reject"></div>
                     <div class="profile-card-choice m--like"></div>
@@ -61,7 +61,7 @@ get_header();
                 </div>
                 <div class="profile-card">
                     <div class="profile-info lime">
-                        <img src="/wordpress/wp-content/themes/BANDMATES./images/lola_and_suzy.png" class="img-card">
+                        <img src="<?php echo get_stylesheet_directory_uri()?>/images/lola_and_suzy.png" class="img-card">
                         <div class="info-block">
                             <p class="profile-card-name">Lola & Suzy</p>
                             <div class="tags">
@@ -80,7 +80,7 @@ get_header();
                         Basées à Bruxelles, on est disponibles en semaine et le week-end pour répéter et développer un répertoire original. Si tu te reconnais dans l’univers blues, jazz et soul et que tu as envie de partager la scène avec nous, écris-nous – on est prêtes à créer une expérience musicale unique ! 🎤🎸🎶
                         </p>
                         <a href="#" class="read-more-btn">Lire plus</a>
-                        <audio id="audio" src="/wordpress/wp-content/themes/BANDMATES./assets/music/instru_lola_suzy.mp3" style="display: none;"></audio>
+                        <audio id="audio" src="<?php echo get_stylesheet_directory_uri()?>/assets/music/instru_lola_suzy.mp3" style="display: none;"></audio>
                     </div>
                     <div class="profile-card-choice m--reject"></div>
                     <div class="profile-card-choice m--like"></div>
@@ -88,7 +88,7 @@ get_header();
                 </div>
                 <div class="profile-card">
                     <div class="profile-info cyan">
-                    <img src="/wordpress/wp-content/themes/BANDMATES./images/jake_and_finn.png" class="img-card">
+                    <img src="<?php echo get_stylesheet_directory_uri()?>/images/jake_and_finn.png" class="img-card">
                         <div class="info-block">
                             <p class="profile-card-name">Jake & Finn</p>
                             <div class="tags">
@@ -105,7 +105,7 @@ get_header();
                             Si tu as envie de rejoindre un projet sérieux, collaboratif, et orienté vers le live, n’hésite pas à nous contacter. On est prêts à faire du bruit ensemble et à repousser les limites ! 🎸🥁🔥
                         </p>
                         <a href="#" class="read-more-btn">Lire plus</a>
-                        <audio id="audio" src="/wordpress/wp-content/themes/BANDMATES./assets/music/instru_jake_finn.mp3" style="display: none;"></audio>
+                        <audio id="audio" src="<?php echo get_stylesheet_directory_uri()?>/assets/music/instru_jake_finn.mp3" style="display: none;"></audio>
                     </div>
                     <div class="profile-card-choice m--reject"></div>
                     <div class="profile-card-choice m--like"></div>
@@ -113,7 +113,7 @@ get_header();
                 </div>
                 <div class="profile-card">
                     <div class="profile-info indigo">
-                    <img src="/wordpress/wp-content/themes/BANDMATES./images/lindsey.png" class="img-card">
+                    <img src="<?php echo get_stylesheet_directory_uri()?>/images/lindsey.png" class="img-card">
                         <div class="info-block">
                             <p class="profile-card-name">Lindsay</p>
                             <div class="tags">
@@ -130,7 +130,7 @@ get_header();
                         Basée à Bruxelles, je suis dispo en semaine et les week-ends pour répéter et collaborer avec des musiciens motivés et créatifs. Si ça te parle, swipe moi vers la droite et construisons quelque chose d’unique ! 🎶🤘
                         </p>
                         <a href="#" class="read-more-btn">Lire plus</a>
-                        <audio id="audio" src="/wordpress/wp-content/themes/BANDMATES./assets/music/instru_lindsay.mp3" style="display: none;"></audio>
+                        <audio id="audio" src="<?php echo get_stylesheet_directory_uri()?>/assets/music/instru_lindsay.mp3" style="display: none;"></audio>
                     </div>
                     <div class="profile-card-choice m--reject"></div>
                     <div class="profile-card-choice m--like"></div>
@@ -138,7 +138,7 @@ get_header();
                 </div>
                 <div class="profile-card">
                     <div class="profile-info blue">
-                    <img src="/wordpress/wp-content/themes/BANDMATES./images/max.png" class="img-card">
+                    <img src="<?php echo get_stylesheet_directory_uri()?>/images/max.png" class="img-card">
                         <div class="info-block">
                             <p class="profile-card-name">Max</p>
                             <div class="tags">
@@ -156,7 +156,7 @@ get_header();
                         Si tu penses qu’on pourrait faire de la bonne musique ensemble, n’hésite pas à me swipe vers la droite !
                         </p>
                         <a href="#" class="read-more-btn">Lire plus</a>
-                        <audio id="audio" src="/wordpress/wp-content/themes/BANDMATES./assets/music/instru_max.mp3" style="display: none;"></audio>
+                        <audio id="audio" src="<?php echo get_stylesheet_directory_uri()?>/assets/music/instru_max.mp3" style="display: none;"></audio>
                     </div>
                     <div class="profile-card-choice m--reject"></div>
                     <div class="profile-card-choice m--like"></div>
@@ -164,7 +164,7 @@ get_header();
                 </div>
                 <div class="profile-card">
                     <div class="profile-info purple">
-                        <img src="/wordpress/wp-content/themes/BANDMATES./images/olivia.png" class="img-card">
+                        <img src="<?php echo get_stylesheet_directory_uri()?>/images/olivia.png" class="img-card">
                         <div class="info-block">
                             <p class="profile-card-name">Olivia</p>
                             <div class="tags">
@@ -183,7 +183,7 @@ get_header();
                             Si tu penses qu’on pourrait créer quelque chose de sympa ensemble, n’hésite pas à m’envoyer un message !
                         </p>
                         <a href="#" class="read-more-btn">Lire plus</a>
-                        <audio id="audio" src="/wordpress/wp-content/themes/BANDMATES./assets/music/instru_olivia.mp3" style="display: none;"></audio>
+                        <audio id="audio" src="<?php echo get_stylesheet_directory_uri()?>/assets/music/instru_olivia.mp3" style="display: none;"></audio>
                     </div>
                     <div class="profile-card-choice m--like"></div>
                     <div class="profile-card-drag"></div>
