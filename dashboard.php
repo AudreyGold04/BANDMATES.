@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Dashboard
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>

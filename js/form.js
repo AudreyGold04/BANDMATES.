@@ -1,5 +1,5 @@
-eye_icon = document.getElementById("eye_icon");
-password_input = document.getElementById("password_input");
+const eye_icon = document.getElementById("eye_icon");
+const password_input = document.getElementById("password_input");
 
 eye_icon.onclick = function () {
     if (password_input.type == "password") {

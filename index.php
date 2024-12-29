@@ -1,11 +1,29 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Accueil
+*/
+get_header();
+?>
+<header class="header" id="navbar">
+    <div>
+        <a href="<?php echo get_home_url(); ?>">
+            <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/images/logo.png">
+        </a>
+    </div>
+    <div class="nav">
+        <a class="btn">FAQ</a>
+        <a class="btn">Support</a>
+    </div>
+</header>
+
 <section class="black-section first">
 
     <div class="left-content">
         <h1 class="txt">La musique vous réunit,<br>BandMates vous connecte</h1>
         <div class="">
-            <a href="/wordpress/wp-content/themes/BANDMATES./form.php" class="btn">Rejoindre</a>
-            <a class="btn">Se connecter</a>
+            <!-- <a href="/wordpress/wp-content/themes/BANDMATES./form.php" class="btn">Rejoindre</a> -->
+            <a href="<?php echo home_url('/formulaire-dinscription/'); ?>" class="btn">Rejoindre</a>
+            <a href="<?php echo wp_login_url(); ?>" class="btn">Se connecter</a>
         </div>
     </div>
     
@@ -72,7 +90,8 @@
     <div class="left-content-5">
         <h1>C'est le moment de<br>passer à l'action</h1>
         <h2>Faites le premier pas aujourd’hui et<br>transformez votre rêve en réalité.</h2>
-        <a href="<?php echo get_stylesheet_directory_uri()?>/form.php" class="btn">Rejoignez gratuitement</a>
+        <!-- <a href="<?php echo get_stylesheet_directory_uri()?>/form.php" class="btn">Rejoignez gratuitement</a> -->
+        <a href="<?php echo home_url('/formulaire-dinscription/'); ?>" class="btn">Rejoignez gratuitement</a>
     </div>
 
     <div class="right-content-5">
