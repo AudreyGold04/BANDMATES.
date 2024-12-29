@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer Example</title>
-    <link rel="stylesheet" href="footer.css"> <!-- Ensure this CSS file is correctly linked -->
+    <link rel="stylesheet" href="footer.css"> 
 </head>
 <body>
-    <!-- Other content of your page -->
+    
 
     <footer>
         <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black_logo.png" alt="Logo">
@@ -34,3 +34,5 @@
     </footer>
 </body>
 </html>
+
+
