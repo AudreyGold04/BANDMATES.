@@ -90,7 +90,6 @@ get_header();
     <div class="left-content-5">
         <h1>C'est le moment de<br>passer à l'action</h1>
         <h2>Faites le premier pas aujourd’hui et<br>transformez votre rêve en réalité.</h2>
-        <!-- <a href="<?php echo get_stylesheet_directory_uri()?>/form.php" class="btn">Rejoignez gratuitement</a> -->
         <a href="<?php echo home_url('/formulaire-dinscription/'); ?>" class="btn">Rejoignez gratuitement</a>
     </div>
 
