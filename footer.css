@@ -1,51 +1,59 @@
-footer {
-    padding: 20px;
-    background-color: #f8f8f8;
-    text-align: center;
-}
-
-footer .logo {
-    max-width: 100px;
-    margin-bottom: 10px;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-.footer-columns {
-    display: flex;
-    justify-content: center;
-    gap: 50px; /* Adjust the gap as needed */
+@font-face {
+    font-family: 'Zing';
+    src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .footer-section {
-    margin: 20px 0;
+    margin: 20px 10px;
+    flex: 1 1 30%; 
 }
 
+.footer-section h1,
 .footer-section h2 {
-    font-size: 1.5em;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-.footer-section a {
-    display: block;
-    margin: 5px 0;
-    color: #0073e6;
-    text-decoration: none;
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.footer-section a:hover {
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-section ul li a:hover {
     text-decoration: underline;
 }
 
-.footer-section p {
-    margin: 5px 0;
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-section {
+        margin: 10px 0;
+    }
+    .footer-section h1,
+    .footer-section h2 {
+        text-align: center;
+    }
+    .footer-section ul li a {
+        font-size: 14px;
+    }
 }
 
-hr {
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    margin: 20px 0;
-}
