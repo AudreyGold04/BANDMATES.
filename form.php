@@ -112,36 +112,36 @@ get_header();
     
         <h1 class="profile-title">QUEL EST TON INSTRUMENT PRINCIPAL ?</h1>
         
-        <form class="profile-form">
-            <button type="button" class="inactive">
+        <form class="profile-form choice">
+            <button type="button" class="inactive_2">
                 <p>GUITARE</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>PIANO</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>BASSE</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>CHANT</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>BATTERIE</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>AUTRE</p>
             </button>
         
-            <div class="back_and_go">
-                <button type="button" class="btn-back">RETOUR</button>
-                <button type="button" class="btn-continue">CONTINUER</button>
-            </div>
         </form>
+        <div class="back_and_go">
+            <button type="button" class="btn-back">RETOUR</button>
+            <button type="button" class="btn-continue">CONTINUER</button>
+        </div>
     </div>
 
     <div class="profile-container">
@@ -156,48 +156,48 @@ get_header();
     
         <h1 class="profile-title">QUEL EST TON STYLE MUSICAL PRÉFÉRÉ ?</h1>
         
-        <form class="profile-form">
-            <button type="button" class="inactive">
+        <form class="profile-form choice">
+            <button type="button" class="inactive_2">
                 <p>ROCK</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>JAZZ</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>BLUES</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>CLASSIQUE</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>MÉTAL</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>POP</p>
             </button>
 
-            <button type="button" class="inactive">
-                <p>RAP/HIP-HOP</p>
+            <button type="button" class="inactive_2">
+                <p>RAP</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>ELECTRO</p>
             </button>
 
-            <button type="button" class="inactive">
+            <button type="button" class="inactive_2">
                 <p>AUTRE</p>
             </button>
         
-            <div class="back_and_go">
-                <button type="button" class="btn-back">RETOUR</button>
-                <button type="button" class="btn-continue">CONTINUER</button>
-            </div>
         </form>
+        <div class="back_and_go">
+            <button type="button" class="btn-back">RETOUR</button>
+            <button type="button" class="btn-continue">CONTINUER</button>
+        </div>
     </div>
 
     <div class="profile-container">
