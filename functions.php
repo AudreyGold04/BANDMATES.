@@ -20,6 +20,12 @@ function main_style() {
         echo "<script>console.log('JS Formulaire : " . get_template_directory_uri() . "/js/form.js');</script>";
         wp_enqueue_style('style-form', get_template_directory_uri() . '/css/form.css', [], false);
         wp_enqueue_script('script-form', get_template_directory_uri() . '/js/form.js', [], false, true);
+    } else if (is_page(67)) {
+        echo "<script>console.log('on voit que la page actuelle est le dashboard');</script>";
+        echo "<script>console.log('CSS dashboard : " . get_template_directory_uri() . "/css/form.css');</script>";
+        echo "<script>console.log('JS dashboard : " . get_template_directory_uri() . "/js/form.js');</script>";
+        wp_enqueue_style('style-form', get_template_directory_uri() . '/css/dashboard.css', [], false);
+        wp_enqueue_script('script-form', get_template_directory_uri() . '/js/dashboard.js', [], false, true);
     }
 }
 
