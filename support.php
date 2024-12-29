@@ -14,7 +14,6 @@
         <header>
             <h1>BandMates</h1>
             <nav>
-                <a href="#">Accueil</a>
                 <a href="#">FAQ</a>
                 <a href="#">Support</a>
             </nav>
@@ -22,6 +21,7 @@
 
         <section class="support-info">
             <div class="info-box">
+              <h2>Mentions légales:</h2>
                 <h2>Nom:</h2>
                 <p>BandMates</p>
             </div>
@@ -37,13 +37,12 @@
                 <h2>Numéro d’entreprise:</h2>
                 <p>0439.234.973</p>
             </div>
-        </section>
-
-        <section class="contact">
-            <h2>Contact:</h2>
+          <h2>Contact:</h2>
             <p>Email: <a href="mailto:bandmates.info@gmail.com">bandmates.info@gmail.com</a></p>
             <p>Phone: +32 567 547 890</p>
         </section>
+
+     
     </div>
 </body>
 </html>
