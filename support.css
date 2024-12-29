@@ -7,7 +7,7 @@ Theme Name: BandMates Theme
     src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
-
+}
 
 body {
     font-family: 'CustomFont', Arial, sans-serif;
