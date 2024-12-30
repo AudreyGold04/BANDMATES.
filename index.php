@@ -17,17 +17,6 @@ get_header();
         </div>
     </div>
 
-    <!-- <div class="small-screen" id="small-navbar">
-        <div>
-        </div>
-        <div class="nav">
-            <a class="menu">FAQ</a>
-            <a class="menu">Support</a>
-        </div>
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    </div> -->
-
-
     <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
         <a class="text-white d-block mb-2">FAQ</a>
@@ -45,7 +34,6 @@ get_header();
             </button>
         </div>
     </nav>
-
 
 </header>
 
@@ -67,18 +55,20 @@ get_header();
     
 </section>
 
-<section class="white-section">
-    <img class="musiciens-compatibles"  src="<?php echo get_stylesheet_directory_uri()?>/images/musiciens.png" alt="Groupe de musiciens">
+<section class="white-section bloc-musicien">
+    <img class="musiciens-big-screen"  src="<?php echo get_stylesheet_directory_uri()?>/images/musiciens.png" alt="Groupe de musiciens">
+    <h1 class="musiciens-heading">trouvez des musiciens compatibles avec vous.</h1>
+    <img class="musiciens-image" src="<?php echo get_stylesheet_directory_uri()?>/images/groupe_de_musique.png" alt="Groupe de musiciens">
 </section>
 
-<section class="black-section">
+<section class="black-section third">
 
     <div class="left-content">
         <h1>Formez votre groupe<br>parfait</h2>
         <h2 class="font-abel">Trouvez des musiciens qui vibrent comme vous. Formez votre groupe, partagez votre passion et jouez ensemble.</h2>
     </div>
     
-    <div class="right-content">
+    <div class="right-content-2">
         <img class="chanteuse" src="<?php echo get_stylesheet_directory_uri()?>/images/chanteuse.jpg" alt="Chanteuse">
         <img class="scotch scotch-1" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_blanc.png" alt="Chanteuse">
         <img class="scotch scotch-2" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_transparant.png" alt="Chanteuse">
