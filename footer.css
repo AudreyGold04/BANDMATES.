@@ -1,3 +1,8 @@
+
+/**
+Theme Name: BandMates Theme
+*/
+
 @font-face {
     font-family: 'Zing';
     src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
@@ -5,55 +10,95 @@
     font-style: normal;
 }
 
-.footer-section {
-    margin: 20px 10px;
-    flex: 1 1 30%; 
-}
-
-.footer-section h1,
-.footer-section h2 {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin: 5px 0;
-}
-
-.footer-section ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
-
-
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
+.logo {
+    width: 50px; 
+    height: auto; 
+  }
+  .footer-clean {
+    padding:50px 0;
+    background-color:black;
+    color:#FFF;
+  }
+  
+  .footer-clean h3 {
+    margin-top:20;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+    font color: #FFFFF
+    font-family: 'zing';
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
     }
-    .footer-section {
-        margin: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
     }
-    .footer-section h1,
-    .footer-section h2 {
-        text-align: center;
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:25px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
     }
-    .footer-section ul li a {
-        font-size: 14px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
     }
-}
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
 
