@@ -52,6 +52,10 @@ h2 {
     margin-left: 10%;
 }
 
+.font-abel {
+    font-family: 'Abel', sans-serif !important;
+}
+
 .first {
     display: grid;
     grid-template-columns: 1fr 1fr;
