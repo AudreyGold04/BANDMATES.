@@ -13,6 +13,7 @@ if (have_posts()) :
     endwhile;
 else :
     echo '<p>Page introuvable.</p>';
-endif;
+endif;?>
+<?php
 get_footer();
 ?>

@@ -3,17 +3,6 @@
 Template Name: Footer
 */
 ?>
-
-<!-- <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled</title>
-</head>
-
-<body> -->
     <div class="footer-clean">
         <footer>
             <div class="container">
@@ -31,7 +20,7 @@ Template Name: Footer
                             <li><a href="<?php echo home_url('/faq/'); ?>">FAQ</a></li>
                             <li><a href="<?php echo home_url('/politique-de-confidentialite/'); ?>">Politique de condidentialité</a></li>
                             <li><a href="<?php echo home_url('/code-de-conduite/'); ?>">Code de conduite</a></li>
-                            <li><a href="<?php echo home_url('/mentions-legales/'); ?>">Mentin légales</a></li>
+                            <li><a href="<?php echo home_url('/mentions-legales/'); ?>">Mentions légales</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">

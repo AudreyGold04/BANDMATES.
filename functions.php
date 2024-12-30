@@ -4,7 +4,7 @@ add_theme_support('title-tag');
 function main_style() {
     // echo "<script>console.log('Page actuelle ID : " . get_the_ID() . "');</script>";
     // echo "<script>console.log('Permalien actuel : " . get_permalink() . "');</script>";
-    // echo "<script>console.log('on entre dans la fonction pour le style et le js');</script>";   
+    // echo "<script>console.log('on entre dans la fonction pour le style et le js');</script>";  
     wp_enqueue_style('boostrap-style', "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css", array(), '5.3.0');
     wp_enqueue_script('bootstrap-script', "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js", array('jquery'), '5.3.0', true);
     wp_enqueue_style('bandmates_style', get_stylesheet_directory_uri() . '/style.css', [], false);
@@ -37,7 +37,9 @@ function main_style() {
     } else if (is_page(79)) {
         wp_enqueue_style('style-officiel', get_template_directory_uri() . '/style-officiel.css', [], false);
     } else if (is_page(87)) {
-        wp_enqueue_style('style-404', get_template_directory_uri() . 'style-404.css', false);
+        wp_enqueue_style('style-404', get_template_directory_uri() . '/style-404.css', false);
+    } else if (is_page('support')) {
+        wp_enqueue_style('style-support', get_template_directory_uri() . '/support.css', false);
     }
 }
 

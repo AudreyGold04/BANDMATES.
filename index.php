@@ -13,14 +13,14 @@ get_header();
         </div>
         <div class="nav">
             <a class="btn menu" href="<?php echo home_url('/faq/'); ?>">FAQ</a>
-            <a class="btn menu">Support</a>
+            <a class="btn menu" href="<?php echo home_url('/support/'); ?>">Support</a>
         </div>
     </div>
 
     <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
         <a class="text-white d-block mb-2" href="<?php echo home_url('/faq/'); ?>">FAQ</a>
-        <a class="text-white d-block">Support</a>
+        <a class="text-white d-block" href="<?php echo home_url('/support/'); ?>">Support</a>
     </div>
     </div>
     <nav class="navbar navbar-dark bg-dark">

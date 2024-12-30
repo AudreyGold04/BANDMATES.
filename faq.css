@@ -1,7 +1,42 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  flex: 0 0 auto;
+  width: 100%;
+  z-index: 200;
+}
+
+.box {
+  margin-top: 20%;
+  padding: 1.5rem;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-width: 1px;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+footer {
+    flex: 0 0 auto;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.accordion-body {
+  font-family: 'Abel', sans-serif !important;
+}
+
 .big-screen {
   position: fixed;
   display: flex;
-  top: -200;
+  top: 0;
   transition: top 0.3s ease;
   width: 100%;
   z-index: 200;
@@ -24,21 +59,6 @@
   margin-top: 2%;
   margin-right: 2%;
   width: auto;
-}
-
-h1 {
-  font-size: 4rem;
-  text-align: start;
-  color: #EE53CC;
-  padding-left: 7%;
-  margin-left: 10%;
-}
-
-h2 {
-  text-align: start;
-  color: #EE53CC;
-  padding-left: 7%;
-  margin-left: 10%;
 }
 
 .btn {
@@ -64,8 +84,6 @@ h2 {
   .nav {
       position: static;
       flex-direction: row;
-      background: none;
-      transform: none;
       opacity: 1;
   }
 
@@ -97,7 +115,7 @@ h2 {
       margin: 0;
   }
 
-  .collapse {
+  .menu {
       background-color: black !important;
   }
 
