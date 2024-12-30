@@ -284,23 +284,19 @@ h3, .font-abel {
     }
 
     .collapse, .navbar {
-        /* position: absolute; */
         display: none;
-        /* visibility: hidden; */
     }
 }
 
 @media (max-width: 768px) {
     .big-screen {
         display: none;
-        /* visibility: hidden; */
     }
 
     .navbar a img.logo {
         max-height: 60px !important;
         width: auto !important;
         display: block;
-        /* visibility: visible; */
     }
     
     .navbar a {

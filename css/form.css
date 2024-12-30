@@ -394,12 +394,10 @@ audio {
     position: absolute;
     top: 49%;
     right: 19%;
-    /* background-color: #b3ff66; */
 }
 
 .etoile-2 {
     top: 33%;
     right: 67%;
     transform: scaleY(-1);
-    /* background-color: #ff69b4; */
 }

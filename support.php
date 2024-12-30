@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BandMates - Support</title>
-    <link rel="stylesheet" href="support.css">
-
-
-  
-</head>
-<body>
+<?php
+/*
+Template Name: Support
+*/
+get_header();
+?>
     <div class="container">
-      
-
         <section class="support-info">
             <div class="info-box">
               <h2>Mentions légales:</h2>
@@ -37,9 +29,8 @@
             <p>Email: <a href="mailto:bandmates.info@gmail.com">bandmates.info@gmail.com</a></p>
             <p>Phone: +32 567 547 890</p>
         </section>
-
-     
     </div>
-</body>
-</html>
+<?php
+get_footer();
+?>
 
