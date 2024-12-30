@@ -4,16 +4,49 @@ Template Name: Accueil
 */
 get_header();
 ?>
-<header class="header" id="navbar">
-    <div>
-        <a href="<?php echo get_home_url(); ?>">
-            <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/images/logo.png">
-        </a>
+<header>
+    <div class="big-screen" id="big-navbar">
+        <div>
+            <a href="<?php echo get_home_url(); ?>">
+                <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="nav">
+            <a class="btn menu">FAQ</a>
+            <a class="btn menu">Support</a>
+        </div>
     </div>
-    <div class="nav">
-        <a class="btn">FAQ</a>
-        <a class="btn">Support</a>
+
+    <!-- <div class="small-screen" id="small-navbar">
+        <div>
+        </div>
+        <div class="nav">
+            <a class="menu">FAQ</a>
+            <a class="menu">Support</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div> -->
+
+
+    <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+        <a class="text-white d-block mb-2">FAQ</a>
+        <a class="text-white d-block">Support</a>
     </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a href="<?php echo get_home_url(); ?>">
+                <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/images/mini-logo-2.png" alt="Logo">
+            </a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
 </header>
 
 <section class="black-section first">
@@ -21,7 +54,6 @@ get_header();
     <div class="left-content">
         <h1 class="txt">La musique vous réunit,<br>BandMates vous connecte</h1>
         <div class="">
-            <!-- <a href="/wordpress/wp-content/themes/BANDMATES./form.php" class="btn">Rejoindre</a> -->
             <a href="<?php echo home_url('/register/'); ?>" class="btn">Rejoindre</a>
             <a href="<?php echo wp_login_url(); ?>" class="btn">Se connecter</a>
         </div>
