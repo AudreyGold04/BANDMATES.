@@ -11,30 +11,32 @@
 </head>
 
 <body>
-   <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black_logo.png" alt="Logo">
     <div class="footer-clean">
         <footer>
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3 item">
-                   
-                      
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-md-3 logo-container">
+                        <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black_logo.png" alt="Logo">
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>Besoin d'aide</h3>
                         <ul>
                             <li><a href="#">Support</a></li>
                             <li><a href="#">FAQ</a></li>
-
+                        </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>Contact</h3>
                         <ul>
                             <li><a href="#">Bandmates.info @gmail.com</a></li>
                             <li><a href="#">+32 470 00 00 00</a></li>
-                            
+                        </ul>
                     </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    <div class="col-lg-3 item social">
+                        <a href="#"><i class="icon ion-social-facebook"></i></a>
+                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                        <a href="#"><i class="icon ion-social-instagram"></i></a>
                         <p class="copyright">Bandmates.© 2024</p>
                     </div>
                 </div>
@@ -46,6 +48,5 @@
 </body>
 
 </html>
-
 
 
