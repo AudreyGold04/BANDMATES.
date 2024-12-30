@@ -75,32 +75,15 @@ get_header();
     </div>
 </section>
 
-<!-- <section class="white-section features">
-    
-    <div class="feature-text">
-        <h1>Pourquoi BandMates ?</h1>
-    </div>
-    
-    <div class="card">
-    
-        <h2>Une communauté engagée</h2>
-        <h3 class="font-abel">Échangez des idées et collaborez avec d'autres artistes passionnés.</h3>
-    </div>
-
-</section> -->
-
 <section class="white-section">
     <div class="container">
-        <!-- Titre de la section -->
         <div class="row mb-4">
             <div class="col text-center">
                 <h1 class="feature-text">Pourquoi BandMates ?</h1>
             </div>
         </div>
 
-        <!-- Grille pour les cartes -->
         <div class="row">
-            <!-- Carte 1 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card text-center">
                     <img class="card-scotch" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_transparant.png" alt="Scotch">
@@ -111,7 +94,6 @@ get_header();
                 </div>
             </div>
 
-            <!-- Carte 2 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card text-center">
                     <img class="card-scotch" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_transparant.png" alt="Scotch">
@@ -122,7 +104,6 @@ get_header();
                 </div>
             </div>
 
-            <!-- Carte 3 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card text-center">
                     <img class="card-scotch" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_transparant.png" alt="Scotch">

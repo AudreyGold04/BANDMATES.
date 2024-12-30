@@ -24,12 +24,6 @@ section {
     color: #E5E5E5;
 }
 
-.logo {
-    margin-top: 2%;
-    margin-left: 2%;
-    width: 10%;
-}
-
 .nav {
     display: flex;
     margin: 10px;
@@ -53,7 +47,7 @@ h2 {
     margin-left: 10%;
 }
 
-.font-abel {
+h3, .font-abel {
     font-family: 'Abel', sans-serif !important;
 }
 
@@ -111,11 +105,6 @@ h2 {
     top: 80%;
     right: -6%;
 }
-
-/*.white-section {
-    background-color: #E5E5E5;
-    color: black;
-} */
 
 .white-section {
     background-color: #E5E5E5;
@@ -294,24 +283,24 @@ h2 {
         opacity: 1;
     }
 
-    .collapse {
+    .collapse, .navbar {
+        /* position: absolute; */
         display: none;
-    }
-
-    .navbar {
-        display: none;
+        /* visibility: hidden; */
     }
 }
 
 @media (max-width: 768px) {
     .big-screen {
         display: none;
+        /* visibility: hidden; */
     }
 
     .navbar a img.logo {
-        max-height: 60px;
-        width: auto;
+        max-height: 60px !important;
+        width: auto !important;
         display: block;
+        /* visibility: visible; */
     }
     
     .navbar a {
@@ -412,20 +401,18 @@ h2 {
         min-height: 100vh;
         width: 100%;
         padding: 0;
-        /* box-sizing: border-box; */
-        /* background-color: #E5E5E5; */
     }
     
     .musiciens-heading {
         display: block;
-        font-size: 4rem; /* Ajuste la taille du texte pour les petits écrans */
-        margin: 10px 0; /* Réduit l'espace entre le texte et l'image */
-        padding: 0 15px; /* Réduit le padding pour éviter que le texte touche les bords */
+        font-size: 4rem;
+        margin: 10px 0;
+        padding: 0 15px;
     }
     
     .musiciens-image {
         display: block;
-        max-width: 100%; /* L'image prend toute la largeur disponible */
+        max-width: 100%;
     }
 
     .right-content-2 {
@@ -435,11 +422,11 @@ h2 {
 
 @media (max-width: 480px) {
     .musiciens-heading {
-        font-size: 4rem; /* Texte légèrement plus petit pour les petits écrans */
-        margin-bottom: 15px; /* Réduction de l'espacement */
+        font-size: 4rem;
+        margin-bottom: 15px;
     }
 
     .musiciens-image {
-        max-width: 100%; /* L'image prend toujours toute la largeur disponible */
+        max-width: 100%;
     }
 }

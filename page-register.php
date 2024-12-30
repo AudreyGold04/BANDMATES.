@@ -8,5 +8,5 @@ if (have_posts()) :
 else :
     echo '<p>Page introuvable.</p>';
 endif;
-wp_footer();
+get_footer();
 ?>

@@ -1,34 +1,15 @@
 
 /**
-Theme Name: BandMates Theme
+Theme Name: Footer
 */
 
-@font-face {
-    font-family: 'Zing';
-    src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .logo {
-    width: 50px; 
-    height: auto; 
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 5%;
+    width: 100% !important;
+    max-height: 150px !important;
 }
-
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 
 .footer-clean {
     padding: 50px 0;

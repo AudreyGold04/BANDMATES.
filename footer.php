@@ -1,28 +1,37 @@
-<!DOCTYPE html>
+<?php
+/*
+Template Name: Footer
+*/
+?>
+
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Untitled</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body> -->
     <div class="footer-clean">
         <footer>
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-sm-4 col-md-3 logo-container">
-                        <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black_logo.png" alt="Logo">
+                        <a href="<?php echo get_home_url(); ?>">
+                            <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/images/logo.png" alt="Logo">
+                        </a>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>Besoin d'aide</h3>
                         <ul>
+                            <li><a href="<?php echo get_home_url(); ?>">Accueil</a></li>
                             <li><a href="#">Support</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="<?php echo home_url('/faq/'); ?>">FAQ</a></li>
+                            <li><a href="<?php echo home_url('/politique-de-confidentialite/'); ?>">Politique de condidentialité</a></li>
+                            <li><a href="<?php echo home_url('/code-de-conduite/'); ?>">Code de conduite</a></li>
+                            <li><a href="<?php echo home_url('/mentions-legales/'); ?>">Mentin légales</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
@@ -33,18 +42,17 @@
                         </ul>
                     </div>
                     <div class="col-lg-3 item social">
-                        <a href="#"><i class="icon ion-social-facebook"></i></a>
-                        <a href="#"><i class="icon ion-social-twitter"></i></a>
-                        <a href="#"><i class="icon ion-social-snapchat"></i></a>
-                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-snapchat"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
                         <p class="copyright">Bandmates.© 2024</p>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <?php wp_footer();?>
 </body>
 
 </html>
