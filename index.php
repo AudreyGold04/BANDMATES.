@@ -22,7 +22,7 @@ get_header();
         <h1 class="txt">La musique vous réunit,<br>BandMates vous connecte</h1>
         <div class="">
             <!-- <a href="/wordpress/wp-content/themes/BANDMATES./form.php" class="btn">Rejoindre</a> -->
-            <a href="<?php echo home_url('/formulaire-dinscription/'); ?>" class="btn">Rejoindre</a>
+            <a href="<?php echo home_url('/register/'); ?>" class="btn">Rejoindre</a>
             <a href="<?php echo wp_login_url(); ?>" class="btn">Se connecter</a>
         </div>
     </div>
@@ -90,7 +90,7 @@ get_header();
     <div class="left-content-5">
         <h1>C'est le moment de<br>passer à l'action</h1>
         <h2>Faites le premier pas aujourd’hui et<br>transformez votre rêve en réalité.</h2>
-        <a href="<?php echo home_url('/formulaire-dinscription/'); ?>" class="btn">Rejoignez gratuitement</a>
+        <a href="<?php echo home_url('/register/'); ?>" class="btn">Rejoignez gratuitement</a>
     </div>
 
     <div class="right-content-5">
