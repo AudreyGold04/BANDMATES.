@@ -155,90 +155,51 @@ h2 {
     position: relative;
     background: #000000;
     color: #EE53CC;
-    /* display: grid;  */
-    /* grid-template-columns: 1fr; */
-    /* grid-template-rows: auto auto 1fr; */
-    border-radius: 36px;
-    /* justify-content: stretch;  */
-    align-items: center;    
-    height: 27em;
-    width: 20em; 
-    border: 1px solid #ccc;
-    transition: transform 0.3s ease;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    border-radius: 36px;
+    height: 100%;
     padding: 20px;
-    margin: auto;
-    
-    
-    display: flex; /* Utilisation de flexbox */
-    justify-content: space-between; /* Espace entre les éléments internes */
-    overflow: hidden; /* Coupe tout contenu qui dépasse les bordures */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute un ombrage pour un effet esthétique */
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
     transform: scale(1.05);
-    z-index: 10; /* Apporte la carte au premier plan */
 }
 
-
-/* .card-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 30%;
-    margin: 0 auto;
-    margin-top: 10%;
-} */
-
 .card-image {
-    display: block;
-    margin: 0 auto;
-    width: auto;
-    max-width: 50%; /* Ajuste la largeur maximale de l'image */
-    height: auto; /* Préserve le ratio */
-    object-fit: contain; /* Centre et ajuste l'image */
+    max-width: 50px;
+    margin: 10px 0;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+}
+
+.card h3 {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #E5E5E5;
 }
 
 .card-scratch {
     position: absolute;
     width: 100%;
-    left: -50%;
-    opacity: 0.3;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    pointer-events: none;
 }
 
-.card-scotch-1 {
+.card-scotch {
     position: absolute;
-    max-width: 75%;
-    top: -12%;
-    right: 58%;
-}
-
-.card-scotch-2 {
-    position: absolute;
-    max-width: 75%;
-    top: 78%;
-    left: 50%;
-}
-
-.card-scotch-3 {
-    position: absolute;
-    max-width: 75%;
-    transform: scaleX(-1);
-    top: -12%;
-    left: 50%;
-}
-
-.card h2 {
-    text-align: center;
-    white-space: nowrap;
-    font-size: 1.5rem;
-    margin: 10px 0;
-    margin-top: 15%;
-}
-
-.card h3 {
-    font-size: 1.3rem;
+    top: -10px;
+    right: -10px;
+    max-width: 40px;
+    transform: rotate(-10deg);
 }
 
 .chanteuse {

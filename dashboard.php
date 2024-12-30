@@ -7,6 +7,41 @@ get_header();
 
 <div class="dashboard">
 
+    <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+        ☰
+    </button>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasSidebarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="little-sidebar">
+                <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/images/black_logo.png" alt="Logo">
+                <div class="user-profile">
+                    <img src="<?php echo get_stylesheet_directory_uri()?>/images/photo-profile-defaut.png" alt="Profile" class="user-profile-pic">
+                    <h2>Jessica</h2>
+                </div>
+                <nav>
+                    <a href="<?php echo home_url('/user/'); ?>" class="nav-item">
+                        <img src="<?php echo get_stylesheet_directory_uri()?>/images/symbol-person.png" class="symbol">
+                        <p>Profil</p>
+                    </a>
+                    <a href="<?php echo home_url('/user/?profiletab=messages'); ?>" class="nav-item">
+                        <img src="<?php echo get_stylesheet_directory_uri()?>/images/symbol-message.png" class="symbol">
+                        <p>Messages</p>
+                    </a>
+                    <a href="<?php echo home_url('/user/?um_action=edit'); ?>" class="nav-item">
+                        <img src="<?php echo get_stylesheet_directory_uri()?>/images/symbol-settings.png" class="symbol">
+                        <p>Paramètres</p>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
     <div class="sidebar">
         <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/images/black_logo.png" alt="Logo">
         <div class="user-profile">
@@ -14,19 +49,19 @@ get_header();
             <h2>Jessica</h2>
         </div>
         <nav>
-            <div class="nav-item">
+            <a href="<?php echo home_url('/user/'); ?>" class="nav-item">
                 <img src="<?php echo get_stylesheet_directory_uri()?>/images/symbol-person.png" class="symbol">
                 <p>Profil</p>
-            </div>
-            <div class="nav-item">
+            </a>
+            <a href="<?php echo home_url('/user/?profiletab=messages'); ?>" class="nav-item">
                 <img src="<?php echo get_stylesheet_directory_uri()?>/images/symbol-message.png" class="symbol">
                 <p>Messages</p>
-            </div>
+            </a>
 
-            <div class="nav-item">
+            <a href="<?php echo home_url('/user/?um_action=edit'); ?>" class="nav-item">
                 <img src="<?php echo get_stylesheet_directory_uri()?>/images/symbol-settings.png" class="symbol">
                 <p>Paramètres</p>
-            </div>
+            </a>
         </nav>
     </div>
 
@@ -194,7 +229,9 @@ get_header();
     <div class="messages">
         <div class="text-message">
             <h3>MESSAGES</h3>
-            <h3>VOIR TOUT</h3>
+            <a href="<?php echo home_url('/user/?profiletab=messages'); ?>">
+                <h3>VOIR TOUT</h3>
+            </a>
         </div>
         <div class="messagesList">
 

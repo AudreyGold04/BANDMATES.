@@ -12,14 +12,14 @@ get_header();
             </a>
         </div>
         <div class="nav">
-            <a class="btn menu">FAQ</a>
+            <a class="btn menu" href="<?php echo home_url('/faq/'); ?>">FAQ</a>
             <a class="btn menu">Support</a>
         </div>
     </div>
 
     <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
-        <a class="text-white d-block mb-2">FAQ</a>
+        <a class="text-white d-block mb-2" href="<?php echo home_url('/faq/'); ?>">FAQ</a>
         <a class="text-white d-block">Support</a>
     </div>
     </div>
@@ -75,36 +75,65 @@ get_header();
     </div>
 </section>
 
-<section class="white-section features">
+<!-- <section class="white-section features">
     
     <div class="feature-text">
         <h1>Pourquoi BandMates ?</h1>
     </div>
     
     <div class="card">
-        <img class="card-scotch-1" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_transparant.png" alt="Chanteuse">
-        <img class="card-scratch" src="<?php echo get_stylesheet_directory_uri()?>/images/scratch.png">
-        <img class="card-image" src="<?php echo get_stylesheet_directory_uri()?>/images/eclair.png">
-        <h2>Des connexions sur mesure</h2>
-        <h3 class="font-abel">Trouvez des musiciens partageant vos influences et styles préférés.</h3>
-    </div>
-        
-    <div class="card">
-        <img class="card-scotch-2" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_transparant.png" alt="Chanteuse">
-        <img class="card-scratch" src="<?php echo get_stylesheet_directory_uri()?>/images/scratch.png">
-        <img class="card-image" src="<?php echo get_stylesheet_directory_uri()?>/images/mains.png">
-        <h2>Formez votre groupe parfait</h2>
-        <h3 class="font-abel">Rassemblez votre équipe pour connecter les musiciens qui s’harmonisent avec vous.</h3>
-    </div>
-        
-    <div class="card">
-        <img class="card-scotch-3" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_transparant.png" alt="Chanteuse">
-        <img class="card-scratch" src="<?php echo get_stylesheet_directory_uri()?>/images/scratch.png">
-        <img class="card-image" src="<?php echo get_stylesheet_directory_uri()?>/images/terre.png">
+    
         <h2>Une communauté engagée</h2>
         <h3 class="font-abel">Échangez des idées et collaborez avec d'autres artistes passionnés.</h3>
     </div>
 
+</section> -->
+
+<section class="white-section">
+    <div class="container">
+        <!-- Titre de la section -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h1 class="feature-text">Pourquoi BandMates ?</h1>
+            </div>
+        </div>
+
+        <!-- Grille pour les cartes -->
+        <div class="row">
+            <!-- Carte 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-center">
+                    <img class="card-scotch" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_transparant.png" alt="Scotch">
+                    <img class="card-scratch" src="<?php echo get_stylesheet_directory_uri()?>/images/scratch.png">
+                    <img class="card-image" src="<?php echo get_stylesheet_directory_uri()?>/images/eclair.png" alt="Icône Éclair">
+                    <h2>Des connexions sur mesure</h2>
+                    <h3>Trouvez des musiciens partageant vos influences et styles préférés.</h3>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-center">
+                    <img class="card-scotch" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_transparant.png" alt="Scotch">
+                    <img class="card-scratch" src="<?php echo get_stylesheet_directory_uri()?>/images/scratch.png">
+                    <img class="card-image" src="<?php echo get_stylesheet_directory_uri()?>/images/mains.png" alt="Icône Mains">
+                    <h2>Formez votre groupe parfait</h2>
+                    <h3>Rassemblez votre équipe pour connecter les musiciens qui s’harmonisent avec vous.</h3>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-center">
+                    <img class="card-scotch" src="<?php echo get_stylesheet_directory_uri()?>/images/scotch_transparant.png" alt="Scotch">
+                    <img class="card-scratch" src="<?php echo get_stylesheet_directory_uri()?>/images/scratch.png">
+                    <img class="card-image" src="<?php echo get_stylesheet_directory_uri()?>/images/terre.png" alt="Icône Terre">
+                    <h2>Une communauté engagée</h2>
+                    <h3>Échangez des idées et collaborez avec d'autres artistes passionnés.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="black-section fifth">

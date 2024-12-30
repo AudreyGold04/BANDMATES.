@@ -178,7 +178,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
   
-  // Fonction pour gérer le lecteur audio
   function setupAudioPlayer(audio) {
     const playPauseBtn = document.querySelector('.play-pause-btn');
     const playIcon = document.querySelector('#play-icon');
@@ -188,12 +187,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentTimeSpan = document.querySelector('#current-time');
     const durationSpan = document.querySelector('#duration');
   
-    // Mettre à jour la durée
     audio.addEventListener('loadedmetadata', () => {
       durationSpan.textContent = formatTime(audio.duration);
     });
-  
-    // Lecture et pause
+    
     playPauseBtn.addEventListener('click', () => {
       if (audio.paused) {
         audio.play();
@@ -205,30 +202,26 @@ document.addEventListener("DOMContentLoaded", function() {
         pauseIcon.style.display = 'none';
       }
     });
-  
-    // Mettre à jour la barre de progression
+    
     audio.addEventListener('timeupdate', () => {
       const progressPercent = (audio.currentTime / audio.duration) * 100;
       timelineProgress.style.width = `${progressPercent}%`;
       currentTimeSpan.textContent = formatTime(audio.currentTime);
     });
   
-    // Navigation dans l'audio
     timeline.addEventListener('click', (e) => {
       const timelineWidth = timeline.offsetWidth;
       const clickX = e.offsetX;
       audio.currentTime = (clickX / timelineWidth) * audio.duration;
     });
-  
-    // Réinitialiser lorsque l'audio se termine
+    
     audio.addEventListener('ended', () => {
       playIcon.style.display = 'inline';
       pauseIcon.style.display = 'none';
       timelineProgress.style.width = '0%';
       currentTimeSpan.textContent = '0:00';
     });
-  
-    // Formater le temps (MM:SS)
+    
     function formatTime(seconds) {
       const minutes = Math.floor(seconds / 60);
       const secs = Math.floor(seconds % 60);
@@ -236,5 +229,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
   
-  // Appeler la fonction après le chargement du DOM
   document.addEventListener('DOMContentLoaded', setupProfileExpansion);

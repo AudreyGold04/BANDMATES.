@@ -28,6 +28,11 @@ function main_style() {
         // echo "<script>console.log('JS dashboard : " . get_template_directory_uri() . "/js/form.js');</script>";
         wp_enqueue_style('style-form', get_template_directory_uri() . '/css/dashboard.css', [], false);
         wp_enqueue_script('script-form', get_template_directory_uri() . '/js/dashboard.js', [], false, true);
+    } else if (is_page(72)) {
+        // echo "<script>console.log('on voit que la page actuelle est la faq');</script>";
+        // echo "<script>console.log('CSS faq : " . get_template_directory_uri() . "faq.css');</script>";
+        wp_enqueue_style('style-faq', get_template_directory_uri() . '/faq.css', [], false);
+        wp_enqueue_script('script-faq', get_template_directory_uri() . '/faq.js', [], false, true);
     }
 }
 

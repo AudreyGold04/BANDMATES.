@@ -1,155 +1,116 @@
-
-/**
-Theme Name: BandMates Theme
-*/
-
-@font-face {
-    font-family: 'Zing';
-    src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
-    font-weight: normal;
-    font-style: normal;
+.big-screen {
+  position: fixed;
+  display: flex;
+  top: -200;
+  transition: top 0.3s ease;
+  width: 100%;
+  z-index: 200;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: #E5E5E5;
 }
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: 'zing';
-        background-color: #f5f5f5;
-      }
-      
-      .faq-heading {
-        font-family: 'zing';   
-        font-weight: 400;
-        font-size: 19px;
-        -webkit-transition: text-indent 0.2s;
-        transition: text-indent 0.2s;
-        text-indent: 20px;
-        color: #333;
-        text-align: center;
-        margin: 30px 0;
-      }
-      
-      .faq-text {
-        font-family: 'zing';   
-        font-weight: 400;
-        color: #fff;
-        width: 90%;
-        padding-left: 20px;
-        margin: 0 auto 30px auto;
-      }
-      
-      .faq {
-        width: 90%;
-        margin: 0 auto;
-        background: black; /* Changed to black */
-        border-radius: 4px;
-        position: relative;
-        border: 1px solid #E1E1E1;
-        overflow: hidden;
-        border-radius: 15px
-      }
-      
-      .faq label {
-        display: block;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        height: 56px;
-        padding-top: 1px;
-        background-color: black; 
-        color: white; 
-        border-bottom: 1px solid #E1E1E1;
-        padding: 0 20px;
-        border-radius: 10px
-      }
-      
-      .faq input[type="checkbox"] {
-        display: none;
-      }
-      
-      .faq .faq-arrow {
-        width: 10px;
-        height: 10px;
-        transition: -webkit-transform 0.8s;
-        transition: transform 0.8s;
-        transition: transform 0.8s, -webkit-transform 0.8s;
-        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        border-top: 2px solid rgba(255, 255, 255, 0.33); 
-        border-right: 2px solid rgba(255, 255, 255, 0.33); 
-        float: right;
-        position: relative;
-        top: -30px;
-        right: 10px;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-      }
-      
-      .faq input[type="checkbox"]:checked + label > .faq-arrow {
-        transition: -webkit-transform 0.8s;
-        transition: transform 0.8s;
-        transition: transform 0.8s, -webkit-transform 0.8s;
-        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-      }
-      
-      .faq input[type="checkbox"]:checked + label {
-        display: block;
-        background: black !important; 
-        color: white; 
-        transition: height 0.8s;
-        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      }
-      
-      .faq input[type='checkbox']:not(:checked) + label {
-        display: block;
-        transition: height 0.8s;
-        height: 60px;
-        padding: 10px 20px;
-        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      }
-      
-      .faq .faq-answer {
-        background-color: black; 
-        color: white; 
-        padding: 10px 20px;
-        display: none; 
-      }
-      
-      .faq input[type="checkbox"]:checked + label + .faq-answer {
-        display: block; 
-      }
-      
-      ::-webkit-scrollbar {
-        display: none;
-      }
-      
-      /
-      @media (min-width: 768px) {
-        .faq {
-          width: 700px;
-        }
-      
-        .faq label {
-          font-size: 18px;
-          height: 60px;
-        }
-      
-        .faq input[type='checkbox']:not(:checked) + label {
-          height: 60px;
-        }
-      }
-      
-      @media (min-width: 1024px) {
-        .faq {
-          width: 1000px;
-        }
-      
-        .faq label {
-          font-size: 20px;
-          height: 70px;
-        }
-      
-        .faq input[type='checkbox']:not(:checked) + label {
-          height: 70px;
-        }
-      }
+
+.logo {
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 10%;
+}
+
+.nav {
+  display: flex;
+  margin: 10px;
+  margin-top: 2%;
+  margin-right: 2%;
+  width: auto;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: start;
+  color: #EE53CC;
+  padding-left: 7%;
+  margin-left: 10%;
+}
+
+h2 {
+  text-align: start;
+  color: #EE53CC;
+  padding-left: 7%;
+  margin-left: 10%;
+}
+
+.btn {
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 35px;
+  border: solid #EE53CC 2px;
+  color: #000000;
+  background: #EE53CC;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+.btn:hover {
+  color: #EE53CC;
+  background: #000000;
+  border: solid #EE53CC 2px;
+}
+
+@media (min-width: 769px) {
+  .nav {
+      position: static;
+      flex-direction: row;
+      background: none;
+      transform: none;
+      opacity: 1;
+  }
+
+  .collapse {
+      display: none;
+  }
+
+  .navbar {
+      display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .big-screen {
+      display: none;
+  }
+
+  .navbar a img.logo {
+      max-height: 60px;
+      width: auto;
+      display: block;
+  }
+  
+  .navbar a {
+      display: flex;
+      align-items: center;
+      height: auto;
+      padding: 0;
+      margin: 0;
+  }
+
+  .collapse {
+      background-color: black !important;
+  }
+
+  .navbar {
+      background-color: #000000;
+  }
+
+  .bg-dark {
+      background-color: #000000 !important;
+  }
+
+  .navbar-toggler {
+      border-color: white;
+  }
+
+}
