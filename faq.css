@@ -1,103 +1,155 @@
+
+/**
+Theme Name: BandMates Theme
+*/
+
 @font-face {
     font-family: 'Zing';
     src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
 }
-
-body {
-  background-color: #000; /* Optional: Set the body background to black as well */
-}
-
-.faq-heading {
-  font-family: 'Zing';   
-  font-weight: 400;
-  font-size: 19px;
-  -webkit-transition: text-indent 0.2s;
-  text-indent: 20px;
-  color: #f8f5f5;
-}
-
-.faq-text {
-  font-family: 'Zing';   
-  font-weight: 400;
-  color: #919191;
-  width: 95%;
-  padding-left: 20px;
-  margin-bottom: 30px;
-}
-
-.faq {
-  width: 1000px;
-  margin: 0 auto;
-  background-color: rgb(249, 247, 247); 
-  position: relative;
-  border: 1px solid #E1E1E1;
-}
-
-.faq label {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  height: 56px;
-  padding-top: 1px;
-  background-color: black; 
-  color: #000000; 
-  border-bottom: 1px solid #E1E1E1;
-}
-
-.faq input[type="checkbox"] {
-  display: none;
-}
-
-.faq .faq-arrow {
-  width: 5px;
-  height: 5px;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  border-top: 2px solid rgba(255, 254, 254, 0.33);
-  border-right: 2px solid rgba(249, 248, 248, 0.33);
-  float: right;
-  position: relative;
-  top: -30px;
-  right: 27px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.faq input[type="checkbox"]:checked + label > .faq-arrow {
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-
-.faq input[type="checkbox"]:checked + label {
-  display: block;
-  background: rgb(10, 10, 10) !important; 
-  color: #4f7351;
-  height: 225px;
-  transition: height 0.8s;
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.faq input[type='checkbox']:not(:checked) + label {
-  display: block;
-  transition: height 0.8s;
-  height: 60px;
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.faq .faq-answer {
-  background-color: black; 
-  color: #FAFAFA; 
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'zing';
+        background-color: #f5f5f5;
+      }
+      
+      .faq-heading {
+        font-family: 'zing';   
+        font-weight: 400;
+        font-size: 19px;
+        -webkit-transition: text-indent 0.2s;
+        transition: text-indent 0.2s;
+        text-indent: 20px;
+        color: #333;
+        text-align: center;
+        margin: 30px 0;
+      }
+      
+      .faq-text {
+        font-family: 'zing';   
+        font-weight: 400;
+        color: #fff;
+        width: 90%;
+        padding-left: 20px;
+        margin: 0 auto 30px auto;
+      }
+      
+      .faq {
+        width: 90%;
+        margin: 0 auto;
+        background: black; /* Changed to black */
+        border-radius: 4px;
+        position: relative;
+        border: 1px solid #E1E1E1;
+        overflow: hidden;
+        border-radius: 15px
+      }
+      
+      .faq label {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        height: 56px;
+        padding-top: 1px;
+        background-color: black; 
+        color: white; 
+        border-bottom: 1px solid #E1E1E1;
+        padding: 0 20px;
+        border-radius: 10px
+      }
+      
+      .faq input[type="checkbox"] {
+        display: none;
+      }
+      
+      .faq .faq-arrow {
+        width: 10px;
+        height: 10px;
+        transition: -webkit-transform 0.8s;
+        transition: transform 0.8s;
+        transition: transform 0.8s, -webkit-transform 0.8s;
+        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        border-top: 2px solid rgba(255, 255, 255, 0.33); 
+        border-right: 2px solid rgba(255, 255, 255, 0.33); 
+        float: right;
+        position: relative;
+        top: -30px;
+        right: 10px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      
+      .faq input[type="checkbox"]:checked + label > .faq-arrow {
+        transition: -webkit-transform 0.8s;
+        transition: transform 0.8s;
+        transition: transform 0.8s, -webkit-transform 0.8s;
+        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+      }
+      
+      .faq input[type="checkbox"]:checked + label {
+        display: block;
+        background: black !important; 
+        color: white; 
+        transition: height 0.8s;
+        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      
+      .faq input[type='checkbox']:not(:checked) + label {
+        display: block;
+        transition: height 0.8s;
+        height: 60px;
+        padding: 10px 20px;
+        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      
+      .faq .faq-answer {
+        background-color: black; 
+        color: white; 
+        padding: 10px 20px;
+        display: none; 
+      }
+      
+      .faq input[type="checkbox"]:checked + label + .faq-answer {
+        display: block; 
+      }
+      
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /
+      @media (min-width: 768px) {
+        .faq {
+          width: 700px;
+        }
+      
+        .faq label {
+          font-size: 18px;
+          height: 60px;
+        }
+      
+        .faq input[type='checkbox']:not(:checked) + label {
+          height: 60px;
+        }
+      }
+      
+      @media (min-width: 1024px) {
+        .faq {
+          width: 1000px;
+        }
+      
+        .faq label {
+          font-size: 20px;
+          height: 70px;
+        }
+      
+        .faq input[type='checkbox']:not(:checked) + label {
+          height: 70px;
+        }
+      }

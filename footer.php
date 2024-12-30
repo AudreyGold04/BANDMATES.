@@ -1,24 +1,51 @@
-    <footer>
-        <img class="logo" src="<?php echo get_stylesheet_directory_uri()?>/images/black_logo.png" alt="Logo">
-        <p>&copy; <?php echo date('Y'); ?> BandMates. Tous droits réservés.</p>
+<!DOCTYPE html>
+<html>
 
-        <div class="footer-columns">
-            <div class="footer-section">
-                <h2>Besoin d'aide</h2>
-                <a href="/support">Support</a><br>
-                <a href="/faq">FAQ</a>
-                <hr>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-            <div class="footer-section">
-                <h2>Contact</h2>
-                <p>Bandmates.info@gmail.com</p>
-                <p>+32 470 00 00 00</p>
-                <hr>
+<body>
+   <img class="logo" src="/wordpress/wp-content/themes/BANDMATES./images/black_logo.png" alt="Logo">
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                   
+                      
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Besoin d'aide</h3>
+                        <ul>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">FAQ</a></li>
+
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">Bandmates.info @gmail.com</a></li>
+                            <li><a href="#">+32 470 00 00 00</a></li>
+                            
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Bandmates.© 2024</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
 
 
