@@ -22,7 +22,7 @@ get_header();
         <h1 class="txt">La musique vous réunit,<br>BandMates vous connecte</h1>
         <div class="">
             <!-- <a href="/wordpress/wp-content/themes/BANDMATES./form.php" class="btn">Rejoindre</a> -->
-            <a href="<?php echo home_url('/formulaire-dinscription/'); ?>" class="btn">Rejoindre</a>
+            <a href="<?php echo home_url('/register/'); ?>" class="btn">Rejoindre</a>
             <a href="<?php echo wp_login_url(); ?>" class="btn">Se connecter</a>
         </div>
     </div>
@@ -43,7 +43,7 @@ get_header();
 
     <div class="left-content">
         <h1>Formez votre groupe<br>parfait</h2>
-        <h2>Trouvez des musiciens qui vibrent comme vous. Formez votre groupe, partagez votre passion et jouez ensemble.</h2>
+        <h2 class="font-abel">Trouvez des musiciens qui vibrent comme vous. Formez votre groupe, partagez votre passion et jouez ensemble.</h2>
     </div>
     
     <div class="right-content">
@@ -64,7 +64,7 @@ get_header();
         <img class="card-scratch" src="<?php echo get_stylesheet_directory_uri()?>/images/scratch.png">
         <img class="card-image" src="<?php echo get_stylesheet_directory_uri()?>/images/eclair.png">
         <h2>Des connexions sur mesure</h2>
-        <h3>Trouvez des musiciens partageant vos influences et styles préférés.</h3>
+        <h3 class="font-abel">Trouvez des musiciens partageant vos influences et styles préférés.</h3>
     </div>
         
     <div class="card">
@@ -72,7 +72,7 @@ get_header();
         <img class="card-scratch" src="<?php echo get_stylesheet_directory_uri()?>/images/scratch.png">
         <img class="card-image" src="<?php echo get_stylesheet_directory_uri()?>/images/mains.png">
         <h2>Formez votre groupe parfait</h2>
-        <h3>Rassemblez votre équipe pour connecter les musiciens qui s’harmonisent avec vous.</h3>
+        <h3 class="font-abel">Rassemblez votre équipe pour connecter les musiciens qui s’harmonisent avec vous.</h3>
     </div>
         
     <div class="card">
@@ -80,7 +80,7 @@ get_header();
         <img class="card-scratch" src="<?php echo get_stylesheet_directory_uri()?>/images/scratch.png">
         <img class="card-image" src="<?php echo get_stylesheet_directory_uri()?>/images/terre.png">
         <h2>Une communauté engagée</h2>
-        <h3>Échangez des idées et collaborez avec d'autres artistes passionnés.</h3>
+        <h3 class="font-abel">Échangez des idées et collaborez avec d'autres artistes passionnés.</h3>
     </div>
 
 </section>
@@ -90,7 +90,7 @@ get_header();
     <div class="left-content-5">
         <h1>C'est le moment de<br>passer à l'action</h1>
         <h2>Faites le premier pas aujourd’hui et<br>transformez votre rêve en réalité.</h2>
-        <a href="<?php echo home_url('/formulaire-dinscription/'); ?>" class="btn">Rejoignez gratuitement</a>
+        <a href="<?php echo home_url('/register/'); ?>" class="btn">Rejoignez gratuitement</a>
     </div>
 
     <div class="right-content-5">
@@ -99,4 +99,6 @@ get_header();
 
 </section>
 
-<?php get_footer(); ?>
+<?php
+wp_footer();
+get_footer(); ?>
