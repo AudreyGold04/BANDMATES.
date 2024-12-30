@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Zing';
+    src: url("/wordpress/wp-content/themes/BANDMATES./assets/fonts/zing.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color: #000; /* Optional: Set the body background to black as well */
+}
+
+.faq-heading {
+  font-family: 'Zing';   
+  font-weight: 400;
+  font-size: 19px;
+  -webkit-transition: text-indent 0.2s;
+  text-indent: 20px;
+  color: #f8f5f5;
+}
+
+.faq-text {
+  font-family: 'Zing';   
+  font-weight: 400;
+  color: #919191;
+  width: 95%;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.faq {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(249, 247, 247); 
+  position: relative;
+  border: 1px solid #E1E1E1;
+}
+
+.faq label {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 56px;
+  padding-top: 1px;
+  background-color: black; 
+  color: #000000; 
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.faq input[type="checkbox"] {
+  display: none;
+}
+
+.faq .faq-arrow {
+  width: 5px;
+  height: 5px;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-top: 2px solid rgba(255, 254, 254, 0.33);
+  border-right: 2px solid rgba(249, 248, 248, 0.33);
+  float: right;
+  position: relative;
+  top: -30px;
+  right: 27px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.faq input[type="checkbox"]:checked + label > .faq-arrow {
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.faq input[type="checkbox"]:checked + label {
+  display: block;
+  background: rgb(10, 10, 10) !important; 
+  color: #4f7351;
+  height: 225px;
+  transition: height 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.faq input[type='checkbox']:not(:checked) + label {
+  display: block;
+  transition: height 0.8s;
+  height: 60px;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.faq .faq-answer {
+  background-color: black; 
+  color: #FAFAFA; 
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
