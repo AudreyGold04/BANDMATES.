@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>BandMates</h1>
-            <nav>
-                <a href="#">FAQ</a>
-                <a href="#">Support</a>
-            </nav>
-        </header>
+      
 
         <section class="support-info">
             <div class="info-box">
@@ -26,6 +20,8 @@
                 <p>BandMates</p>
             </div>
             <div class="info-box">
+              <h2>Forme juridique:</h2>
+                <p>A.S.B.L.</p>
                 <h2>Adresse:</h2>
                 <p>Rue de la Poste 111 - 1030 Bruxelles</p>
             </div>
@@ -46,3 +42,4 @@
     </div>
 </body>
 </html>
+
